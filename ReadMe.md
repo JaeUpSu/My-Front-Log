@@ -89,4 +89,4 @@
 
 [sentryEnvLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/TypeScript/%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95.md "Go Sentry 환경설정" 
 
-[tsInterfaceLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/TypeScript/%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95.md "Go Interface 환경설정" 
+[tsInterfaceLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/TypeScript/Interface.md "Go TS Interface" 
