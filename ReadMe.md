@@ -33,6 +33,14 @@
     - Feat
         - [Interface][tsInterfaceLink]
 
+
+<br>
+<br>
+
+-  🦴 Next.js
+
+    - [Next.js][nextLink]
+
 <br>
 <br>
 
@@ -78,6 +86,9 @@
 
 
 [testLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BD%94%EB%93%9C.md "Go Test" 
+
+
+[nextLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/Next.md "Go Next" 
 
 [gitMdLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/%F0%9F%91%80%20Github/MarkDown.md "Go Git MarkDown 문법" 
 
