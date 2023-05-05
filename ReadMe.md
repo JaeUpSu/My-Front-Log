@@ -29,7 +29,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;`예시`
 
-<img src="./Image/exex.png" style="object-fit: cover" width="60%" height="500px"/>
+<img src="./Image/exex.png" style="object-fit: cover" width="440px" height="500px"/>
 
 <br>
 <br>
