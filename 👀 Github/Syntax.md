@@ -1,3 +1,7 @@
+<img src="../Image/github_logo.jpg" style="object-fit: cover" width="100%"/>
+
+<br>
+<br>
 
 # #  `제목`
 > 블럭 인용 문자입니다 1

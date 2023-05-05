@@ -85,7 +85,7 @@ console.log(hello("Kim"));
 ```
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;`확장 extends` &nbsp;&nbsp;  다른 인터페이스를 확장하여 속성을 상속하고 새 속성을 추가 가능
+&nbsp;&nbsp;&nbsp;&nbsp;`확장 extends` &nbsp;&nbsp;  다른 인터페이스를 확장하여 속성을 상속하고<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 새 속성을 추가 가능
 ```
 interface Person {
   name: string;
@@ -104,7 +104,7 @@ const kim: Employee = {
 ```
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;`선택적 속성 ?` &nbsp;&nbsp;  객체에 존재할 수도 있고 존재하지 않을 수도 있는 선택적 속성을 정의 가능
+&nbsp;&nbsp;&nbsp;&nbsp;`선택적 속성 ?` &nbsp;&nbsp;  객체에 존재할 수도 있고 존재하지 않을 수도 있는 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 선택적 속성을 정의 가능
 ```
 interface Person {
   name: string;
