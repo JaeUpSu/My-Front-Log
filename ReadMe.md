@@ -27,7 +27,7 @@
 
     - [TypeScript][tsLink]
     - [환경설정][tsEnvLink]
-    
+
     <br/>
     
     - Feat
@@ -78,6 +78,8 @@
 
 
 [testLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BD%94%EB%93%9C.md "Go Test" 
+
+[gitMdLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/%F0%9F%91%80%20Github/MarkDown.md "Go Git MarkDown 문법" 
 
 [gitMdSyntaxLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/%F0%9F%91%80%20Github/Syntax.md "Go Git MarkDown 문법" 
 
