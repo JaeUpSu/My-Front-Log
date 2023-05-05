@@ -1,3 +1,8 @@
+<img src="./Image/frontend-dev.png" style="object-fit: cover" width="100%"/>
+
+<br>
+<br>
+
 # ⭐ Front Training
 
 <br>
@@ -5,13 +10,29 @@
 
 ## 📰 실습
 
+<br>
 
+- Bangsam
+
+- Coding Garden
+
+- My Info
 
 <br>
 <br>
 
 
 ## 👀 이론
+
+<br>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;`예시`
+
+<img src="./Image/exex.png" style="object-fit: cover" width="60%" height="500px"/>
+
+<br>
+<br>
 
 <br>
 
