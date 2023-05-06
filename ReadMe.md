@@ -8,7 +8,7 @@
 <br>
 <br>
 
-## 📰 프로젝트
+## 📰 React 웹 프로젝트
 
 <br>
 
@@ -68,6 +68,8 @@
     - [let-const][esLetConstLink]
     - [모듈-Module][esModuleLink]
     - [약속-Promises][esPromisesLink]
+    - [Spread-Opts][esSpreadLink]
+    - [Template-Literal][esLiteralLink]
 
 
 <br>
