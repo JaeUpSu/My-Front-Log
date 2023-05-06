@@ -6,17 +6,35 @@
 # ⭐ Front Training
 
 <br>
+
+## &nbsp; 🧱 목차
+- [React 웹 프로젝트](#📰-react-웹-프로젝트)
+  - [My Info](#🧨-my-info)
+  - [Bangsam](#🧨-bangsam)
+  - [React Master](#🧨-react-master)
+  - [Coding Garden](#🧨-coding-garden)
+- [Study 기록](#👀-스터디-기록)
+    - [Github](#🦴-github)
+    - [TypeScript](#🦴-typescript)
+    - [ES6](#🦴-es6)
+    - [Next.js](#🦴-next-js)
+    - [Test](#🦴-test)
+    - [Monitoring](#🦴-monitoring)
+<br>
 <br>
 
 ## 📰 React 웹 프로젝트
 
 <br>
 
-- Bangsam
+### 🧨 My Info
 
-- Coding Garden
+### 🧨 Bangsam
 
-- My Info
+### 🧨 React Master
+
+### 🧨 Coding Garden
+
 
 <br>
 <br>
@@ -36,73 +54,73 @@
 
 <br>
 
--  🦴 Github
+####  🦴 Github
 
-    - [MarkDown][gitMdLink]
-        - [문법][gitMdSyntaxLink]
+- [MarkDown][gitMdLink]
+    - [문법][gitMdSyntaxLink]
 
 <br>
 <br>
 
--  🦴 TypeScript
+####  🦴 TypeScript
 
-    - [TypeScript][tsLink]
-    - [환경설정][tsEnvLink]
+- [TypeScript][tsLink]
+- [환경설정][tsEnvLink]
 
-    <br/>
+<br/>
     
-    - Feat
-        - [Interface][tsInterfaceLink]
+- Feat
+    - [Interface][tsInterfaceLink]
 
 
 <br>
 <br>
 
--  🦴 ES6
+####  🦴 ES6
 
-    - [ES6][esLink]
-    - [화살표함수][esArrowLink]
-    - [클래스][esClassLink]
-    - [매개변수-기본값][esDefaultParmasLink]
-    - [디스트럭처링][esDestructuringLink]
-    - [let-const][esLetConstLink]
-    - [모듈-Module][esModuleLink]
-    - [약속-Promises][esPromisesLink]
-    - [Spread-Opts][esSpreadLink]
-    - [Template-Literal][esLiteralLink]
+- [ES6][esLink]
+- [화살표함수][esArrowLink]
+- [클래스][esClassLink]
+- [매개변수-기본값][esDefaultParmasLink]
+- [디스트럭처링][esDestructuringLink]
+- [let-const][esLetConstLink]
+- [모듈-Module][esModuleLink]
+- [약속-Promises][esPromisesLink]
+- [Spread-Opts][esSpreadLink]
+- [Template-Literal][esLiteralLink]
 
-
-<br>
-<br>
-
--  🦴 Next.js
-
-    - [Next.js][nextLink]
 
 <br>
 <br>
 
--  🦴 Test
+####  🦴 Next js
 
-    - [Test][testLink]
-        - [TDD][sentryLink]    
-    
-    <br/>
-    
-    - [Jest][sentryLink]
-        - [환경설정][sentryEnvLink]
+- [Next.js][nextLink]
 
 <br>
 <br>
 
--  🦴 Monitoring
+####  🦴 Test
 
-    - [모니터링][sentryLink]
-    
-    <br/>
-    
-    - [Sentry][sentryLink]
-        - [환경설정][sentryEnvLink]
+- [Test][testLink]
+    - [TDD][sentryLink]    
+
+<br/>
+
+- [Jest][sentryLink]
+    - [환경설정][sentryEnvLink]
+
+<br>
+<br>
+
+####  🦴 Monitoring
+
+- [모니터링][sentryLink]
+
+<br/>
+
+- [Sentry][sentryLink]
+    - [환경설정][sentryEnvLink]
  
 
 
