@@ -9,8 +9,8 @@
 <br>
 
 * **정의**
-* **사용이유**
-* **기능**
+* **문법**
+* **코드**
 
 <br>
 
@@ -18,48 +18,88 @@
 
 
 ```
-npx create-react-app my-app-name --template typescript
+JavaScript에서 함수를 더 간결하고 
+표현적으로 작성할 수 있는 새로운 문법
 
-npx create-next-app@latest my-app-name --template typescript
+기존의 함수 표현식에 비해 
+더 짧고 간결한 문법을 제공
 ```
 <br>
 
-> 사용이유
+> 문법
 
 <br>
 
-`TypeScript 컴파일러를 구성하고 TypeScript 프로젝트에 대한 옵션을 지정하는 데 사용`
-
-- tsConfig
-    - 컴파일러 옵션
-    - 포함 및 제외
-    - 추가 옵션
+- 간결한 문법
+- 암묵적인 반환
+- Lexical 'this' 바인딩 
+- arguments 객체 없음 
+- new 바인딩 없음 
     
 <br>
 
-
-`컴파일러 옵션`
+&nbsp;&nbsp;&nbsp;&nbsp;`간결한 문법`
 
 ```
-{
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "outDir": "dist",
-    "rootDir": "src",
-    "strict": true
-  }
-}
+일반 함수에 비해 더 짧고 간결한 문법
+"=>" (뚱뚱한 화살표) 기호로 표시
+```    
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;`암묵적인 반환`
+
+```
+본문이 단일 표현식으로 구성되어 있다면
+return 문을 명시적으로 사용하지 않아도 됨
+```  
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;`Lexical 'this' 바인딩`
+
+```
+자체적인 "this" 값을 바인딩 X
+대신, 정의된 주변 문맥에서 "this" 값을 상속
+
+이러한 동작은 "this" 키워드와 관련된 
+혼동과 불일치를 방지하는 데 도움
+```  
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;`arguments 객체 없음`
+
+```
+자체적인 "arguments" 객체가 없음 
+
+전달된 인수에 접근해야 할 경우, 
+주변 범위의 "arguments" 객체를 사용
+```  
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;`new 바인딩 없음`
+
+```
+"new" 키워드와 함께 생성자로 사용 불가능
+
+새로운 객체를 생성하기 위해 필요한 
+내부 [[Construct]] 메소드가 없기 때문
 ```
 
 <br>
 
-> 기능
+> 코드
 
 
 ```
-npx create-react-app my-app-name --template typescript
+function greet(name) {
+  return "Hello, " + name;
+}
 
-npx create-next-app@latest my-app-name --template typescript
+const greetArrow = (name) => "Hello, " + name;
+
+console.log(greet("John")); 
+  // 출력: Hello, John
+
+console.log(greetArrow("John")); 
+  // 출력: Hello, John
 ```
 <br>
