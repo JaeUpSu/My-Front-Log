@@ -38,7 +38,6 @@ const [el1, el2, ...rest] = array;
 
 ```
 const { prop1, prop2 } = object;
-
 ```
 
 <br>

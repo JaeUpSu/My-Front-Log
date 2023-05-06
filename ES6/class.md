@@ -83,7 +83,6 @@ class MySubclass extends MyClass {
 
   // 추가적인 메서드 정의
 }
-
 ```
 <br>
 
