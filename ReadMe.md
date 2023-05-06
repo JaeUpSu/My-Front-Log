@@ -156,3 +156,7 @@
 [esModuleLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/ES6/module.md "Go ES6 Module" 
 
 [esPromisesLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/ES6/promises.md "Go ES6 Default Promises" 
+
+[esSpreadLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/ES6/spread-operator.md "Go ES6 Spread Opts" 
+
+[esLiteralLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/ES6/template-literals.md "Go ES6 Template Literal" 
