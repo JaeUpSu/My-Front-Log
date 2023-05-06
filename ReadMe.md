@@ -9,7 +9,7 @@
 
 ## &nbsp; 🧱 목차
 - [React 웹 프로젝트](#📰-react-웹-프로젝트)
-  - [My Info](###🧨-my-info)
+  - [My Info](#🧨-my-info)
   - [Bangsam](#🧨-bangsam)
   - [React Master](#🧨-react-master)
   - [Coding Garden](#🧨-coding-garden)
