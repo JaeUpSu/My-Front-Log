@@ -5,7 +5,7 @@
 
 # ⭐ Front Training
 
-<br>
+<!-- <br>
 
 ## &nbsp; 🧱 목차
 - [React 웹 프로젝트](#📰-react-웹-프로젝트)
@@ -22,7 +22,7 @@
     - [ES6](#🦴-es6)
     - [Next.js](#🦴-next-js)
     - [Test](#🦴-test)
-    - [Monitoring](#🦴-monitoring)
+    - [Monitoring](#🦴-monitoring) -->
 <br>
 <br>
 
