@@ -38,6 +38,42 @@
 <br>
 
 ### 🧨 My Info
+<hr>
+
+> Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
+
+<br>
+
+<img src="./Projects/MyInfo/Image/myinfo_1.png" style="object-fit: cover" width="440px" height="400px"/>
+
+<img src="./Projects/MyInfo/Image/myinfo_2.png" style="object-fit: cover" width="440px" height="400px"/>
+
+<img src="./Projects/MyInfo/Image/myinfo_3.png" style="object-fit: cover" width="440px" height="400px"/>
+
+<img src="./Projects/MyInfo/Image/myinfo_4.png" style="object-fit: cover" width="440px" height="400px"/>
+
+<br>
+
+### **`⚙️ 개발환경`** 
+- Python3.9
+- Django4.0
+- sqlite3
+- Poetry
+- Discord
+
+<br>
+
+- React18.2
+- Axios1.2.2
+- Bootstrap5.2.3
+- Style-Components5.3.6
+
+
+<br>
+
+### [**👣 기능 정리 링크**](#-monitoring) 
+
+<br>
 
 ### 🧨 Bangsam
 
@@ -171,8 +207,9 @@
 
 
 
-[testLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BD%94%EB%93%9C.md "Go Test" 
+[myInfoLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BD%94%EB%93%9C.md "Go MyInfo" 
 
+[testLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BD%94%EB%93%9C.md "Go Test" 
 
 [nextLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/Next.md "Go Next" 
 
