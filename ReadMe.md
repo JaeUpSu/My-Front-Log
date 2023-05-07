@@ -44,13 +44,13 @@
 
 <br>
 
-<img src="./Projects/MyInfo/Image/myinfo_1.png" style="object-fit: cover" width="440px" height="400px"/>
+<img src="./Projects/MyInfo/Image/myinfo_1.png" style="object-fit: cover" width="500px" height="400px"/>
 
-<img src="./Projects/MyInfo/Image/myinfo_2.png" style="object-fit: cover" width="440px" height="400px"/>
+<img src="./Projects/MyInfo/Image/myinfo_2.png" style="object-fit: cover" width="500px" height="400px"/>
 
-<img src="./Projects/MyInfo/Image/myinfo_3.png" style="object-fit: cover" width="440px" height="400px"/>
+<img src="./Projects/MyInfo/Image/myinfo_3.png" style="object-fit: cover" width="500px" height="400px"/>
 
-<img src="./Projects/MyInfo/Image/myinfo_4.png" style="object-fit: cover" width="440px" height="400px"/>
+<img src="./Projects/MyInfo/Image/myinfo_4.png" style="object-fit: cover" width="500px" height="400px"/>
 
 <br>
 
