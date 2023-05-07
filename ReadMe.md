@@ -71,7 +71,7 @@
 
 <br>
 
-### [**👣 기능 정리 링크**](#-monitoring) 
+### [**👣 기능 정리 링크**][myInfoLink] 
 
 <br>
 
@@ -207,7 +207,7 @@
 
 
 
-[myInfoLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BD%94%EB%93%9C.md "Go MyInfo" 
+[myInfoLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/ReadMe.md "Go MyInfo" 
 
 [testLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BD%94%EB%93%9C.md "Go Test" 
 
