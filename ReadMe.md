@@ -8,26 +8,26 @@
 <br>
 
 ## &nbsp; 🧱 목차
-- [📰React 웹 프로젝트](#-react-웹-프로젝트)
-  - [🧨My Info](#-my-info)
-  - [🧨Bangsam](#-bangsam)
-  - [🧨React Master](#-react-master)
-  - [🧨Coding Garden](#-coding-garden)
+- [📰 React 웹 프로젝트](#-react-웹-프로젝트)
+  - [🧨 My Info](#-my-info)
+  - [🧨 Bangsam](#-bangsam)
+  - [🧨 React Master](#-react-master)
+  - [🧨 Coding Garden](#-coding-garden)
   
   <br>
 
-- [👀Study 기록](#-스터디-기록)
-    - [🦴Github](#-github)
-    - [🦴TypeScript](#-typescript)
-    - [🦴ES6](#-es6)
-    - [🦴W3C 웹 표준](#-w3c-웹-표준)
-    - [🦴Next.js](#-next-js)
-    - [🦴Test](#-test)
-    - [🦴Monitoring](#-monitoring)
+- [👀 Study 기록](#-스터디-기록)
+    - [🦴 Github](#-github)
+    - [🦴 TypeScript](#-typescript)
+    - [🦴 ES6](#-es6)
+    - [🦴 W3C 웹 표준](#-w3c-웹-표준)
+    - [🦴 Next.js](#-next-js)
+    - [🦴 Test](#-test)
+    - [🦴 Monitoring](#-monitoring)
 
 <br>
 
-- [🔗Coding Test](#-coding-test)
+- [🔗 Coding Test](#-coding-test)
 
  
 <br>
