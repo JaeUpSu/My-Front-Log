@@ -20,6 +20,7 @@
     - [🦴Github](#-github)
     - [🦴TypeScript](#-typescript)
     - [🦴ES6](#-es6)
+    - [🦴W3C 웹 표준](#-w3c-웹-)
     - [🦴Next.js](#-next-js)
     - [🦴Test](#-test)
     - [🦴Monitoring](#-monitoring)
