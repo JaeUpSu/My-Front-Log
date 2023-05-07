@@ -16,13 +16,13 @@
   
   <br>
 
-- [Study 기록](#-스터디-기록)
-    - [Github](#-github)
-    - [TypeScript](#-typescript)
-    - [ES6](#-es6)
-    - [Next.js](#-next-js)
-    - [Test](#-test)
-    - [Monitoring](#-monitoring)
+- [👀Study 기록](#-스터디-기록)
+    - [🦴Github](#-github)
+    - [🦴TypeScript](#-typescript)
+    - [🦴ES6](#-es6)
+    - [🦴Next.js](#-next-js)
+    - [🦴Test](#-test)
+    - [🦴Monitoring](#-monitoring)
 <br>
 <br>
 
