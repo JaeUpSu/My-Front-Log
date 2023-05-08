@@ -91,7 +91,7 @@ function ChildComponent() {
 작은 규모의 애플리케이션이나 
 단순한 상태 공유에 유용
 
-하지만 useContext는 단일 컨텍스트 객체만을 지원
+useContext는 단일 컨텍스트 객체만을 지원
 
 ---
 
