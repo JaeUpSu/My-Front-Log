@@ -322,6 +322,7 @@ useState 와 useEffect 분석
 ####  🦴 상태관리
 
 - [상태관리][stateManageLink]
+- [Recoil][smRecoilLink]
 
 <br>
 <br>
@@ -383,6 +384,8 @@ useState 와 useEffect 분석
 
 
 
+
+[smRecoilLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC/Recoil/Recoil.md "Go 상태관리의 Recoil" 
 
 [stateManageLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC/%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC.md "Go 상태관리" 
 
