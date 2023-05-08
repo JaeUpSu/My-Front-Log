@@ -57,6 +57,7 @@ useState 와 useEffect 분석
 
 <br>
 
+## ⬇️ Click !!!
 
 [![김현수 _ React 라이프사이클](https://img.youtube.com/vi/hSh2BsnA9Dg/0.jpg)](https://www.youtube.com/watch?v=hSh2BsnA9Dg?t=0s) 
 
