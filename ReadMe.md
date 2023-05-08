@@ -101,7 +101,9 @@
 - Django4.0
 - sqlite3
 - Poetry
-- Discord
+- PostgreSQL
+- Uvicorn
+- Gunicorn
 
 <br>
 
@@ -116,7 +118,7 @@
 
 <br>
 
-### [**👣 기능 정리 링크**][myInfoLink] 
+### [**👣 기능 정리 링크**][bangsamLink] 
 
 <br>
 <br>
@@ -251,6 +253,8 @@
 
 
 
+
+[bangsamLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/ReadMe.md "Go Bangsam" 
 
 [myInfoLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/ReadMe.md "Go MyInfo" 
 
