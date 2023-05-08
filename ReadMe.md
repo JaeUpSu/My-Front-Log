@@ -150,13 +150,13 @@
 - React18.2
 - Next.js
 - TypeScript
+- Craco6.4.0
 
 <br>
 
 - Axios1.2.2
 - react-hook-form7.43.2
 - react-query3.39.3
-- Craco6.4.0
 - Style-Components5.3.6
 - Chakra UI
 
@@ -170,7 +170,50 @@
 <hr>
 
 ## 🧨 Coding Garden
+<hr>
 
+> TypeScript 와 Jest & RTL 을 통한 테스트 코드 작성<br>Recoil 을 통한 상태관리를 하는<br>`사용자별 대시보드에 중점을 둔 강의사이트`
+
+<br>
+
+<img src="./Projects/CodingGarden/Image/cg5.gif" style="object-fit: cover" width="600px" height="270px"/>
+
+<img src="./Projects/CodingGarden/Image/cg1.gif" style="object-fit: cover" width="600px" height="270px"/>
+
+<img src="./Projects/CodingGarden/Image/cg6.gif" style="object-fit: cover" width="600px" height="270px"/>
+
+<img src="./Projects/CodingGarden/Image/cg3.gif" style="object-fit: cover" width="600px" height="270px"/>
+
+<br>
+<br>
+
+### **`⚙️ 개발환경`** 
+
+- HTML, CSS, JavaScript
+- React18.2
+- TypeScript
+- Jest29.5 
+- RTL
+- Recoil
+
+<br>
+
+- Axios1.2.2
+- react-hook-form7.43.2
+- react-query3.39.3
+- SASS1.61
+- Chakra UI
+- nivo0.80
+- highcharts10.3.3
+
+<br>
+
+- Sentry
+- Discord
+
+<br>
+
+### [**👣 기능 정리 링크**][cgLink] 
 
 <br>
 <br>
@@ -295,6 +338,9 @@
 
 
 
+
+
+[cgLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/CodingGarden/ReadMe.md "Go Coding Garden" 
 
 
 [rmLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/ReactMaster/ReadMe.md "Go React Master" 
