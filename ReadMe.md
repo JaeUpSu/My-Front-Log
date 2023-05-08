@@ -10,7 +10,7 @@
 ## &nbsp; 🧱 목차
 
 - [🗣️ 나의 발표 영상](#-나의-발표-영상)
-  - [📹 React LifeCycle 발표](#-react-lifecycle-발표)
+  - [📹 React 라이프사이클 발표](#-react-라이프사이클-발표)
   
   <br>
 
@@ -41,12 +41,20 @@
 
 # 🗣️ 나의 발표 영상
 
-## `📹 React LifeCycle 발표`
+## `📹 React 라이프사이클 발표`
+
+<br>
+
+> React 라이프사이클 에 대해 발표<br>
+Class 를 사용한 컴포넌트때 라이프사이클 네이밍 분석<br><br>
+직접적으로 라이프사이클에 영향을 주는 <br>
+useState 와 useEffect 분석
+
 
 <br>
 
 
-[![김현수 _ React LifeCycle](https://img.youtube.com/vi/hSh2BsnA9Dg/0.jpg)](https://www.youtube.com/watch?v=hSh2BsnA9Dg?t=0s) 
+[![김현수 _ React 라이프사이클](https://img.youtube.com/vi/hSh2BsnA9Dg/0.jpg)](https://www.youtube.com/watch?v=hSh2BsnA9Dg?t=0s) 
 
  
 <br>
