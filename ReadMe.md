@@ -319,6 +319,13 @@ useState 와 useEffect 분석
 <br>
 <br>
 
+####  🦴 상태관리
+
+- [상태관리][stateManageLink]
+
+<br>
+<br>
+
 ####  🦴 Next js
 
 - [Next.js][nextLink]
@@ -375,6 +382,9 @@ useState 와 useEffect 분석
 
 
 
+
+
+[stateManageLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC/%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC.md "Go 상태관리" 
 
 
 [cgLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/CodingGarden/ReadMe.md "Go Coding Garden" 
