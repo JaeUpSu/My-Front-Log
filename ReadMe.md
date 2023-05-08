@@ -50,7 +50,7 @@
 
 <img src="./Projects/MyInfo/Image/myinfo_3.png" style="object-fit: cover" width="600px" height="500px"/>
 
-<img src="./Projects/MyInfo/Image/myinfo_4.png" style="object-fit: cover" width="600px" height="400px"/>
+<img src="./Projects/MyInfo/Image/myinfo_4.png" style="object-fit: cover" width="600px" height="300px"/>
 
 <br>
 
