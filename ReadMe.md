@@ -8,6 +8,12 @@
 <br>
 
 ## &nbsp; 🧱 목차
+
+- [🗣️ 나의 발표 영상](#-나의-발표-영상)
+  - [📹 React LifeCycle 발표](#-react-lifecycle-발표)
+  
+  <br>
+
 - [📰 React 웹 프로젝트](#-react-웹-프로젝트)
   - [🧨 My Info](#-my-info)
   - [🧨 Bangsam](#-bangsam)
@@ -28,6 +34,19 @@
 <br>
 
 - [🔗 Coding Test](#-coding-test)
+
+ 
+<br>
+<br>
+
+# 🗣️ 나의 발표 영상
+
+## `📹 React LifeCycle 발표`
+
+<br>
+
+
+[![김현수 _ React LifeCycle](https://img.youtube.com/vi/hSh2BsnA9Dg/0.jpg)](https://www.youtube.com/watch?v=hSh2BsnA9Dg?t=0s) 
 
  
 <br>
