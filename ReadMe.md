@@ -44,13 +44,13 @@
 
 <br>
 
-<img src="./Projects/MyInfo/Image/myinfo_1.png" style="object-fit: cover" width="570px" height="400px"/>
+<img src="./Projects/MyInfo/Image/myinfo_1.png" style="object-fit: cover" width="600px" height="500px"/>
 
-<img src="./Projects/MyInfo/Image/myinfo_2.png" style="object-fit: cover" width="570px" height="400px"/>
+<img src="./Projects/MyInfo/Image/myinfo_2.png" style="object-fit: cover" width="600px" height="500px"/>
 
-<img src="./Projects/MyInfo/Image/myinfo_3.png" style="object-fit: cover" width="570px" height="400px"/>
+<img src="./Projects/MyInfo/Image/myinfo_3.png" style="object-fit: cover" width="600px" height="500px"/>
 
-<img src="./Projects/MyInfo/Image/myinfo_4.png" style="object-fit: cover" width="570px" height="400px"/>
+<img src="./Projects/MyInfo/Image/myinfo_4.png" style="object-fit: cover" width="600px" height="500px"/>
 
 <br>
 
@@ -85,15 +85,16 @@
 
 <br>
 
-<img src="./Projects/Bangsam/Image/bang_1.png" style="object-fit: cover" width="570px" height="250px"/>
+<img src="./Projects/Bangsam/Image/bang_1.png" style="object-fit: cover" width="600px" height="320px"/>
 
-<img src="./Projects/Bangsam/Image/bang_2.png" style="object-fit: cover" width="570px" height="250px"/>
+<img src="./Projects/Bangsam/Image/bang_2.png" style="object-fit: cover" width="600px" height="320px"/>
 
-<img src="./Projects/Bangsam/Image/bang_3.png" style="object-fit: cover" width="570px" height="250px"/>
+<img src="./Projects/Bangsam/Image/bang_3.png" style="object-fit: cover" width="600px" height="320px"/>
 
-<img src="./Projects/Bangsam/Image/bang_4.png" style="object-fit: cover" width="570px" height="250px"/>
+<img src="./Projects/Bangsam/Image/bang_4.png" style="object-fit: cover" width="600px" height="320px"/>
 
-<img src="./Projects/Bangsam/Image/bang_5.png" style="object-fit: cover" width="570px" height="250px"/>
+<img src="./Projects/Bangsam/Image/bang_5.png" style="object-fit: cover" width="600px" height="320px"/>
+<br>
 <br>
 
 ### **`⚙️ 개발환경`** 
@@ -125,6 +126,48 @@
 <hr>
 
 ## 🧨 React Master
+<hr>
+
+> TypeScript 노마드 강의를 Next.js 와 SSR 를 적용한 클론 코딩 <br>`암호화폐 시세 트래커 / 트렐로 클론 / 모션 프로젝트`
+
+<br>
+
+<img src="./Projects/ReactMaster/Image/react-master1.png" style="object-fit: cover" width="600px" height="270px"/>
+
+<img src="./Projects/ReactMaster/Image/react-master2.png" style="object-fit: cover" width="600px" height="270px"/>
+
+<img src="./Projects/ReactMaster/Image/react-master3.png" style="object-fit: cover" width="600px" height="270px"/>
+
+<img src="./Projects/ReactMaster/Image/react-master4.png" style="object-fit: cover" width="600px" height="270px"/>
+
+<img src="./Projects/ReactMaster/Image/react-master5.png" style="object-fit: cover" width="600px" height="270px"/>
+<br>
+<br>
+
+### **`⚙️ 개발환경`** 
+
+- HTML, CSS, JavaScript
+- React18.2
+- Next.js
+- TypeScript
+
+<br>
+
+- Axios1.2.2
+- react-hook-form7.43.2
+- react-query3.39.3
+- Craco6.4.0
+- Style-Components5.3.6
+- Chakra UI
+
+
+<br>
+
+### [**👣 기능 정리 링크**][bangsamLink] 
+
+<br>
+<br>
+<hr>
 
 ## 🧨 Coding Garden
 
