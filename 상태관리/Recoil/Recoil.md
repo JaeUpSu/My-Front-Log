@@ -9,162 +9,170 @@
 <br>
 
 
-* **주요 기술**
-* **예시 코드**
+* **정의**
+* **환경설정**
+* **사용법**
+* **최적화**
 
 <br>
 
-> 주요 기술
 
-- 시맨틱 태그
-- 멀티미디어 지원
-- 웹 폼 개선
+> 정의
 
-<br>
-
-&nbsp;&nbsp;&nbsp;`시멘틱 태그`
 ```
-시맨틱 태그(semantic tags)가 도입
+페이스북에서 개발한 
+React 상태 관리 라이브러리
 
-이러한 태그들은 콘텐츠의 의미
-명확하게 표현 가능 
+단순하고 직관적인 API를 제공
+복잡한 상태 관리를 쉽게 할 수 있도록 도움
+```
+<br>
 
-검색 엔진 최적화(SEO)를 개선
-웹 접근성을 향상
+> 환경설정
+```
+npm install recoil
+```
+<br>
 
+```javascript
+import React from 'react';
+import { RecoilRoot } from 'recoil';
+import App from './App';
 
+function Root() {
+  return (
+    <RecoilRoot>
+      <App />
+    </RecoilRoot>
+  );
+}
 
-[종류]
-
-<header> 
-    ㄴ> 문서의 헤더
-        로고, 제목, 검색 폼 등을 포함
-    
-<nav>
-    ㄴ> 문서의 탐색 링크를 그룹화
-        메뉴, 링크 목록 등을 포함
-    
-<main>
-    ㄴ> 문서의 주요 콘텐츠
-        한 페이지에 하나의 
-        <main> 요소만 사용 가능
-
-<article>
-    ㄴ> 독립적인 콘텐츠
-        뉴스 기사, 블로그 글, 
-        포럼 게시물 등을 포함
-
-<section>
-    ㄴ> 문서의 구획
-        관련된 콘텐츠 그룹을 나눌 때 사용
-        
-<aside>
-    ㄴ> 주요 콘텐츠와는 관련이 적은 보조 콘텐츠
-        사이드바, 광고 등을 포함
-        
-<footer>
-    ㄴ> 문서의 푸터
-        저작권 정보, 연락처 등을 포함
-
+export default Root;
 ```
 
 <br>
-
-&nbsp;&nbsp;&nbsp;`멀티미디어 지원`
-```
-오디오, 비디오, 캔버스(canvas), 
-SVG 등의 멀티미디어 요소와 
-기능이 추가
-
-이를 통해 웹 페이지에서 멀티미디어 콘텐츠를 더욱 쉽게 삽입하고 제어
+<br>
 
 
-[종류]
+> 사용법
 
-    <img>
-        ㄴ> 이미지를 삽입
-            src 속성을 통해 이미지 경로 지정
-            
-    <video>
-        ㄴ> 동영상을 삽입, src 속성 통해 
-            비디오 파일 경로를 지정 가능 
-            
-            <source> 요소를 사용하여 
-            다양한 형식의 비디오를 지정 가능
-
-    <audio>
-        ㄴ> 오디오 파일을 삽입, src 속성 통해 
-            오디오 파일 경로를 지정할 가능 
-        
-            <source> 요소를 사용하여 
-            다양한 형식의 오디오를 지정 가능
-
-    <canvas>
-        ㄴ> 스크립트를 사용, 
-            그래픽을 그리기 위한 영역을 생성
-        
-            JavaScript를 통해 그림을 그리거나 
-            애니메이션을 생성 가능
-```
+- Atom 정의
+- 상태 사용
+- 상태 읽기
 
 <br>
 
-> 예시 코드
+&nbsp;&nbsp;&nbsp;`Atom 정의`
+```javascript
+import { atom } from 'recoil';
 
-<br>
-
-- 시맨틱 태그
-- 멀티미디어 지원
-- 웹 폼 개선
-
-<br>
-
-&nbsp;&nbsp;&nbsp;`시멘틱 태그`
-```html
-<header>
-  <h1>Website Title</h1>
-</header>
-
-<main>
-  <article>
-    <h2>Article Title</h2>
-    <p>Article content goes here...</p>
-  </article>
-</main>
-
-<footer>
-  <p>&copy; 2023 Example Company</p>
-</footer>
+const counterState = atom({
+  key: 'counterState',
+  default: 0,
+});
 ```
+<br>
+
+&nbsp;&nbsp;&nbsp;`상태 사용`
+```javascript
+import React from 'react';
+import { useRecoilState } from 'recoil';
+import { counterState } from './atoms';
+
+function Counter() {
+  const [count, setCount] = useRecoilState(counterState);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={increment}>Increment</button>
+    </div>
+  );
+}
+```
+<br>
+
+&nbsp;&nbsp;&nbsp;`상태 읽기`
+```javascript
+import React from 'react';
+import { useRecoilValue } from 'recoil';
+import { counterState } from './atoms';
+
+function CounterDisplay() {
+  const count = useRecoilValue(counterState);
+
+  return <p>Count: {count}</p>;
+}
+```
+<br>
+<br>
+
+> 사용법
 
 <br>
 
-&nbsp;&nbsp;&nbsp;`멀티미디어 지원`
-```html
-<audio controls>
-  <source src="audio-file.mp3" type="audio/mpeg">
-  Your browser does not support the audio tag.
-</audio>
-
-<video controls>
-  <source src="video-file.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-<canvas id="myCanvas"></canvas>
-```
+- 상태의 원자성 유지
+- 상태의 세분화
+- 선택적 렌더링
+- 비동기 상태 관리
+- Devtools 활용
 
 <br>
 
-&nbsp;&nbsp;&nbsp;`웹 폼 개선`
-```html
-<form>
-  <label for="name">Name:</label>
-  <input type="text" id="name" required>
-
-  <label for="email">Email:</label>
-  <input type="email" id="email" required>
-
-  <input type="submit" value="Submit">
-</form>
+&nbsp;&nbsp;&nbsp;`상태의 원자성 유지`
 ```
+상태를 작은 단위로 나누어 
+원자적인 상태로 관리하는 것이 Good!
+
+상태 간의 의존성이 줄어들어 
+병렬로 업데이트가 가능
+```
+<br>
+
+&nbsp;&nbsp;&nbsp;`상태의 세분화`
+```
+필요한 컴포넌트에만 
+해당 상태를 제공하는 것이 Good!
+
+컴포넌트 간의 결합도가 낮아지고, 
+관리가 용이
+```
+<br>
+
+&nbsp;&nbsp;&nbsp;`선택적 렌더링`
+```
+상태에 따라 선택적으로 컴포넌트를 렌더링
+
+상태에 따라 컴포넌트의 가시성을 제어하는 방식
+유연하고 동적인 UI를 구현
+```
+<br>
+
+
+&nbsp;&nbsp;&nbsp;`비동기 상태관리`
+```
+selector를 사용
+비동기 작업의 결과를 상태로 관리
+
+의존하는 상태가 변경될 때만 재계산
+
+상태 간의 의존성을 관리
+불필요한 재계산을 방지하여 성능을 향상
+
+비동기 작업의 결과를 처리하는 데 유용
+```
+<br>
+
+&nbsp;&nbsp;&nbsp;`Devtools 활용`
+```
+개발자 도구를 제공
+상태의 변화를 모니터링하고 디버깅
+
+상태의 변화를 시각적으로 추적
+상태의 흐름을 이해하고 최적화
+```
+<br>
