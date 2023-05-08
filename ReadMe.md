@@ -176,6 +176,12 @@
 
 <br>
 
+**`* 해당 프로젝트는 Next.js 와  
+Test Code 그리고 D3 를 이용한 완전 Custom 한 Chart 를 추가하여 Update 할 예정`**
+
+<br>
+<br>
+
 <img src="./Projects/CodingGarden/Image/cg5.gif" style="object-fit: cover" width="600px" height="370px"/>
 
 <img src="./Projects/CodingGarden/Image/cg1.gif" style="object-fit: cover" width="600px" height="370px"/>
