@@ -63,12 +63,22 @@ function App() {
   );
 }
 
-// 값을 소비하는 컴포넌트에서 useContext로 값 가져오기
+// 값을 소비하는 컴포넌트에서 useContext로 값 가져오기, 수정하기
 function ChildComponent() {
-  const value = useContext(MyContext);
-  
-  return <p>{value}</p>;
+  const { value, setValue } = useContext(MyContext);
+
+  const handleClick = () => {
+    setValue("new value");
+  };
+
+  return (
+    <div>
+      <p>{value}</p>
+      <button onClick={handleClick}>Change Value</button>
+    </div>
+  );
 }
+
 ```
 
 <br>
