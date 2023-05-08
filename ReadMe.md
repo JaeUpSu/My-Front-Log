@@ -163,7 +163,7 @@
 
 <br>
 
-### [**👣 기능 정리 링크**][bangsamLink] 
+### [**👣 기능 정리 링크**][rmLink] 
 
 <br>
 <br>
@@ -296,6 +296,8 @@
 
 
 
+
+[rmLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/ReactMaster/ReadMe.md "Go React Master" 
 
 [bangsamLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/ReadMe.md "Go Bangsam" 
 
