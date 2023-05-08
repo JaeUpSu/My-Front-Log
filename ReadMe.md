@@ -33,14 +33,14 @@
 <br>
 <br>
 
-## 📰 React 웹 프로젝트
+# 📰 React 웹 프로젝트
 
 <br>
 
-### 🧨 My Info
+## 🧨 My Info
 <hr>
 
-> Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
+> Discord Bot 을 활용한 `나의 웹 개발자 소개 페이지`
 
 <br>
 
@@ -63,6 +63,7 @@
 
 <br>
 
+- HTML, CSS, JavaScript
 - React18.2
 - Axios1.2.2
 - Bootstrap5.2.3
@@ -74,12 +75,56 @@
 ### [**👣 기능 정리 링크**][myInfoLink] 
 
 <br>
+<br>
+<hr>
 
-### 🧨 Bangsam
+## 🧨 Bangsam
+<hr>
 
-### 🧨 React Master
+> 무한 스크롤을 구현하고 많은 필터링이 있어 <br>상태관리가 많이 어려웠던 `부동산 채팅 웹 페이지`
 
-### 🧨 Coding Garden
+<br>
+
+<img src="./Projects/Bangsam/Image/bang_1.png" style="object-fit: cover" width="570px" height="250px"/>
+
+<img src="./Projects/Bangsam/Image/bang_2.png" style="object-fit: cover" width="570px" height="250px"/>
+
+<img src="./Projects/Bangsam/Image/bang_3.png" style="object-fit: cover" width="570px" height="250px"/>
+
+<img src="./Projects/Bangsam/Image/bang_4.png" style="object-fit: cover" width="570px" height="250px"/>
+
+<img src="./Projects/Bangsam/Image/bang_5.png" style="object-fit: cover" width="570px" height="250px"/>
+<br>
+
+### **`⚙️ 개발환경`** 
+- Python3.9
+- Django4.0
+- sqlite3
+- Poetry
+- Discord
+
+<br>
+
+- HTML, CSS, JavaScript
+- React18.2
+- Axios1.2.2
+- react-hook-form7.43.2
+- react-query3.39.3
+- Style-Components5.3.6
+- Chakra UI
+
+
+<br>
+
+### [**👣 기능 정리 링크**][myInfoLink] 
+
+<br>
+<br>
+<hr>
+
+## 🧨 React Master
+
+## 🧨 Coding Garden
 
 
 <br>
