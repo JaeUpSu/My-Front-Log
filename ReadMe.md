@@ -8,21 +8,24 @@
 <br>
 
 ## &nbsp; 🧱 목차
+  <br>
 
-- [🗣️ 나의 발표 영상](#-나의-발표-영상)
+- ## 🗣️ 나의 발표 영상
   - [📹 React 라이프사이클 발표](#-react-라이프사이클-발표)
   
   <br>
+  <br>
 
-- [📰 React 웹 프로젝트](#-react-웹-프로젝트)
+- ## 📰 React 웹 프로젝트
   - [🧨 My Info](#-my-info)
   - [🧨 Bangsam](#-bangsam)
   - [🧨 React Master](#-react-master)
   - [🧨 Coding Garden](#-coding-garden)
   
   <br>
+  <br>
 
-- [👀 Study 기록](#-스터디-기록)
+- ## 👀 Study 기록
     - [🦴 Github](#-github)
     - [🦴 TypeScript](#-typescript)
     - [🦴 ES6](#-es6)
@@ -31,6 +34,7 @@
     - [🦴 Test](#-test)
     - [🦴 Monitoring](#-monitoring)
 
+<br>
 <br>
 
 - [🔗 Coding Test](#-coding-test)
