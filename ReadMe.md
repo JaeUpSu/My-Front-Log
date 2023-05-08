@@ -30,6 +30,7 @@
     - [🦴 TypeScript](#-typescript)
     - [🦴 ES6](#-es6)
     - [🦴 W3C 웹 표준](#-w3c-웹-표준)
+    - [🦴 상태관리](#-상태관리)
     - [🦴 Next.js](#-next-js)
     - [🦴 Test](#-test)
     - [🦴 Monitoring](#-monitoring)
