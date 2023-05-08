@@ -89,4 +89,3 @@ function ChildComponent() {
 
 상태 관리 라이브러리(예: Redux, MobX)를 
 사용하는 것이 더 적절
-<br>
