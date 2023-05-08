@@ -176,13 +176,13 @@
 
 <br>
 
-<img src="./Projects/CodingGarden/Image/cg5.gif" style="object-fit: cover" width="600px" height="320px"/>
+<img src="./Projects/CodingGarden/Image/cg5.gif" style="object-fit: cover" width="600px" height="370px"/>
 
-<img src="./Projects/CodingGarden/Image/cg1.gif" style="object-fit: cover" width="600px" height="320px"/>
+<img src="./Projects/CodingGarden/Image/cg1.gif" style="object-fit: cover" width="600px" height="370px"/>
 
-<img src="./Projects/CodingGarden/Image/cg6.gif" style="object-fit: cover" width="600px" height="320px"/>
+<img src="./Projects/CodingGarden/Image/cg6.gif" style="object-fit: cover" width="600px" height="370px"/>
 
-<img src="./Projects/CodingGarden/Image/cg3.gif" style="object-fit: cover" width="600px" height="320px"/>
+<img src="./Projects/CodingGarden/Image/cg3.gif" style="object-fit: cover" width="600px" height="370px"/>
 
 <br>
 <br>
