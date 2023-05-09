@@ -4,12 +4,12 @@
 <br>
 
 
-# ⚒️  `MyInfo 소개`
+# ⚒️  `Bangsam 소개`
 
 <br>
 
 
-* **정의**
+* **소개**
 * **기능목록**
 * **KPT 회고**
 
@@ -19,7 +19,10 @@
 > 소개
 
 ```
-Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
+무한 스크롤을 구현하고 
+많은 필터링이 있어
+상태관리가 많이 어려웠던 
+부동산 채팅 웹 페이지
 ```
 <br>
 <br>
@@ -28,15 +31,77 @@ Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
 
 <br>
 
-### &nbsp;&nbsp;&nbsp;**`🔗 Scroll To Top`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 Marquee Slider`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 PortFolio Slider`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 Feed Modal (+ Thumbnail)`**<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 라우팅**][sttLink]<br>
+
+[sttLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/ScrollToTop.md "Go MyInfo ScrollToTop"
+
+### &nbsp;&nbsp;&nbsp;[**🔗 에러 페이지**][ltiLink]<br>
+
+[ltiLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/LinkToId.md "Go MyInfo LinkToId"
+
+### &nbsp;&nbsp;&nbsp;[**🔗 API 객체**][msLink]<br>
+
+[msLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/MarqueeSlider.md "Go MyInfo Marquee Slider"
+
+### &nbsp;&nbsp;&nbsp;[**🔗 Custom Hooks**][pfsLink]<br>
+
+[pfsLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/PortFolioSlider.md "Go MyInfo PortFolio Slider"
+
+### &nbsp;&nbsp;&nbsp;[**🔗 무한 스크롤**][fmLink]<br>
+
+[fmLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/FeedModal.md "Go MyInfo Feed Modal"
+
+### &nbsp;&nbsp;&nbsp;[**🔗 스켈레톤 로딩**][rdlLink]<br>
+
+[rdlLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/ReactDJangoLinking.md "Go MyInfo React Django Linking"
+
+### &nbsp;&nbsp;&nbsp;[**🔗 소셜 로그인**][dbLink]<br>
+
+[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+
+### &nbsp;&nbsp;&nbsp;[**🔗 싱글 폼**][dbLink]<br>
+
+[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+
+### &nbsp;&nbsp;&nbsp;[**🔗 헤더**][dbLink]<br>
+
+[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+
+### &nbsp;&nbsp;&nbsp;[**🔗 이미지 카드**][dbLink]<br>
+
+[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+### &nbsp;&nbsp;&nbsp;[**🔗 Select Modal**][dbLink]<br>
+
+[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+### &nbsp;&nbsp;&nbsp;[**🔗 Radio Card**][dbLink]<br>
+
+[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+### &nbsp;&nbsp;&nbsp;[**🔗 Range Slider**][dbLink]<br>
+
+[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+### &nbsp;&nbsp;&nbsp;[**🔗 Tab Menu**][dbLink]<br>
+
+[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+### &nbsp;&nbsp;&nbsp;[**🔗 OnlyMePage**][dbLink]<br>
+
+[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
 
 <br>
 
-### &nbsp;&nbsp;&nbsp;**`🔗 React 와 Django Linking`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 Request Discord Bot`**<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 React Helmet**][dbLink]<br>
+
+[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+
+
+### &nbsp;&nbsp;&nbsp;[**🔗 React Query**][dbLink]<br>
+
+[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+
+
+### &nbsp;&nbsp;&nbsp;[**🔗 React Hook Form**][dbLink]<br>
+
+[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+
 
 <br>
 <br>
@@ -50,16 +115,15 @@ Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
 
 ```
 1 )  
-        Android App 과 랜딩페이지 이후로 처음으로 
-        스스로 Front, Back 모두 설계하고 구현한 Web
+        팀 프로젝트로 구현한 부동산 채팅 웹으로
+        많은 경우의 수를 확인하고 프로젝트를 마무리
 
 2 )
-        Django 와 React 를 연결하는 것이 이번 프로젝트에서
-        Cors 와 Csrf_token 등 가장 힘든 챌린지였는데 성공
+        많은 필터링으로 생성된 상태를 
+        전역관리를 하지 않았지만 에러를 최소화
 
 3 )
-        구현하게 된 동기와 구성에 있어 만족했고
-        그런 관점에서 Discord bot 을 통한 Request를 구현
+        대부분의 페이지를 반응형으로 구현
 ```
 <br>
 
@@ -67,11 +131,13 @@ Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
 <br>
 
 ```
-반응형과 디자인에 있어서 일관성 있고 
-직관적이여야 하는 점이 설계 과정에서 문제
+너무 많은 상태때문에 관리가 힘들어 
+부족한 리팩토링과 단방향 바인딩에 많이 어긋난 점
 
-자동화란 개념이 많이 부족해서 DB 에 
-직접 입력하는 과정이 문제
+JavaScript 로 구현했기 때문에 디버깅과 
+유지보수하는 점에서 많은 불필요한 Action
+
+완벽한 반응형은 아닌 점
 ```
 <br>
 
@@ -79,8 +145,7 @@ Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
 <br>
 
 ```
-큰 틀과 구성을 가지고 반응형과 디자인을 
-Sass 또는 Styled-components 로 제작
+반응형 설계를 위한 모바일 퍼스트 UI 에 대한 이해
 
-Front 에서 DB 에 등록하는 기능을 구현
+Redux 혹은 Recoil 을 사용한 전역으로 상태 관리
 ```
