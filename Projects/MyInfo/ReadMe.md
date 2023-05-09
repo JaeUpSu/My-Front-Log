@@ -33,7 +33,6 @@ Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
 ### &nbsp;&nbsp;&nbsp;**`🔗 Marquee Slider`**<br>
 ### &nbsp;&nbsp;&nbsp;**`🔗 PortFolio Slider`**<br>
 ### &nbsp;&nbsp;&nbsp;**`🔗 Feed Modal (+ Thumbnail)`**<br>
-
 <br>
 
 ### &nbsp;&nbsp;&nbsp;**`🔗 React 와 Django Linking`**<br>
