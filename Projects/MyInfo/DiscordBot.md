@@ -8,7 +8,7 @@
 
 <br>
 
-<img src="./Image/myinfo_4.png" style="object-fit: cover" width="100%" height="200px"/>
+<img src="./Image/myinfo_4.png" style="object-fit: cover" width="400px" height="200px"/>
 
 <br>
 
