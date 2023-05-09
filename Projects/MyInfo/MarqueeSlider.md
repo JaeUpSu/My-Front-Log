@@ -160,11 +160,9 @@ const Logo = styled.img`
 
 const Companies = ({ size, onStartPerformance, onEndPerformance }) => {
   const [key, setKey] = useState(nanoid());
-  // const [hello, setHello] = useState("안녕");
 
   useEffect(() => {
     setKey(nanoid());
-    // window.scrollTo(0, 0);
   }, [size, size.width]);
 
   let scale = 0.3;
