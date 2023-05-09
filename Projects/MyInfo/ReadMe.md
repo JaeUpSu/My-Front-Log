@@ -28,15 +28,37 @@ Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
 
 <br>
 
-### &nbsp;&nbsp;&nbsp;**`🔗 Scroll To Top`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 Link To Id`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 Marquee Slider`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 PortFolio Slider`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 Feed Modal (+ Thumbnail)`**<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 Scroll To Top**][sttLink]<br>
+
+[sttLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/ScrollToTop.md "Go MyInfo ScrollToTop"
+
+### &nbsp;&nbsp;&nbsp;[**🔗 Link To Id**][ltiLink]<br>
+
+[ltiLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/LinkToId.md "Go MyInfo LinkToId"
+
+### &nbsp;&nbsp;&nbsp;[**🔗 Marquee Slider**][msLink]<br>
+
+[msLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/MarqueeSlider.md "Go MyInfo Marquee Slider"
+
+### &nbsp;&nbsp;&nbsp;[**🔗 PortFolio Slider**][pfsLink]<br>
+
+[pfsLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/PortFolioSlider.md "Go MyInfo PortFolio Slider"
+
+### &nbsp;&nbsp;&nbsp;[**🔗 Feed Modal (+ Thumbnail)**][fmLink]<br>
+
+[fmLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/FeedModal.md "Go MyInfo Feed Modal"
+
 <br>
 
-### &nbsp;&nbsp;&nbsp;**`🔗 React 와 Django Linking`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 Request Discord Bot`**<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 React 와 Django Linking**][rdlLink]<br>
+
+[rdlLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/ReactDJangoLinking.md "Go MyInfo React Django Linking"
+
+### &nbsp;&nbsp;&nbsp;[**🔗 Request Discord Bot**][dbLink]<br>
+
+[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+
+
 
 <br>
 <br>
