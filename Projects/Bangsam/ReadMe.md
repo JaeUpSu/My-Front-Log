@@ -86,6 +86,10 @@
 
 [dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
 
+### &nbsp;&nbsp;&nbsp;[**🔗 Proxy**][dbLink]<br>
+
+[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+
 <br>
 
 ### &nbsp;&nbsp;&nbsp;[**🔗 React Helmet**][dbLink]<br>
