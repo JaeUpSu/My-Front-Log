@@ -223,9 +223,12 @@ export default React.memo(withSize()(Companies));
 
 ```
 ```
-"withSize"는 "react-sizeme" 라이브러리에서 제공되는 고차 컴포넌트(Higher-Order Component, HOC)입니다. 이를 사용하면 컴포넌트의 크기 정보를 쉽게 얻을 수 있습니다.
+"withSize"는 "react-sizeme" 라이브러리에서 제공되는 
+고차 컴포넌트(Higher-Order Component, HOC)입니다. 
+이를 사용하면 컴포넌트의 크기 정보를 쉽게 얻을 수 있습니다.
 
-"React.memo"를 적용하여 해당 컴포넌트의 속성이 변경되지 않는 한 렌더링 결과를 캐시하고 재사용
+"React.memo"를 적용하여 해당 컴포넌트의 속성이 
+변경되지 않는 한 렌더링 결과를 캐시하고 재사용
 
   -> React 16.6 버전 이후부터 React.memo는 
      React Hooks의 등장으로 인해 함수형 컴포넌트에서도 

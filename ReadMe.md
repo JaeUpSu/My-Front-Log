@@ -288,6 +288,7 @@ useState 와 useEffect 분석
     
 - Feat
     - [Interface][tsInterfaceLink]
+    - [Generic][tsGenericLink]
 
 
 <br>
@@ -384,11 +385,11 @@ useState 와 useEffect 분석
 
 
 
+[tsGenericLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/TypeScript/Generic.md "Go TypeScript Generic" 
 
 
 
 [smContextLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC/useContext/useContext.md "Go 상태관리의 Context" 
-
 
 [smRecoilLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC/Recoil/Recoil.md "Go 상태관리의 Recoil" 
 
