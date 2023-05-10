@@ -333,6 +333,8 @@ useState 와 useEffect 분석
 ####  🦴 Next js
 
 - [Next.js][nextLink]
+- [_document][nextDocumentLink]
+- [_app][nextAppLink]
 
 <br>
 <br>
@@ -384,10 +386,13 @@ useState 와 useEffect 분석
 
 
 
+[nextAppLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/_app.md "Go Next _document"
+
+[nextDocumentLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/_document.md "Go Next _document" 
+
+[dddLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/DDD/DDD.md "Go DDD" 
 
 [tsGenericLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/TypeScript/Generic.md "Go TypeScript Generic" 
-
-
 
 [smContextLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC/useContext/useContext.md "Go 상태관리의 Context" 
 
