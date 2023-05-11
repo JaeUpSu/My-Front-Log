@@ -76,35 +76,23 @@
 ### &nbsp;&nbsp;&nbsp;[**🔗 Radio Card**][radioLink]<br>
 
 [radioLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/RadioCard.md "Go Bangsam RadioCard"
-### &nbsp;&nbsp;&nbsp;[**🔗 Range Slider**][dbLink]<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 Range Slider**][rangeLink]<br>
 
-[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
-### &nbsp;&nbsp;&nbsp;[**🔗 Tab Menu**][dbLink]<br>
+[rangeLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/RangeSlider.md "Go Bangsam RangeSlider"
+### &nbsp;&nbsp;&nbsp;[**🔗 Tab Menu**][tabLink]<br>
 
-[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
-### &nbsp;&nbsp;&nbsp;[**🔗 OnlyMePage**][dbLink]<br>
+[tabLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/TabMenu.md "Go Bangsam Tab"
+### &nbsp;&nbsp;&nbsp;[**🔗 OnlyMePage**][onlyMePageLink]<br>
 
-[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+[onlyMePageLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/OnlyMePage.md "Go Bangsam OnlyMePage"
 
-### &nbsp;&nbsp;&nbsp;[**🔗 Proxy**][dbLink]<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 Proxy**][proxyLink]<br>
 
-[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+[proxyLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/Proxy.md "Go Bangsam Proxy"
 
-<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 React Helmet**][helmetLink]<br>
 
-### &nbsp;&nbsp;&nbsp;[**🔗 React Helmet**][dbLink]<br>
-
-[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
-
-
-### &nbsp;&nbsp;&nbsp;[**🔗 React Query**][dbLink]<br>
-
-[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
-
-
-### &nbsp;&nbsp;&nbsp;[**🔗 React Hook Form**][dbLink]<br>
-
-[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+[helmetLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/Helmet.md "Go Bangsam Helmet"
 
 
 <br>
