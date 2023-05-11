@@ -4,107 +4,69 @@
 <br>
 
 
-# ⚒️  `LinkToId of MyInfo Project`
+# ⚒️  `API 객체 of Bangsam Project`
 
 <br>
 
 
-* **정의**
-* **기능**
-* **컴포넌트**
+* **설명**
+* **선언**
+* **사용**
 
 <br>
 
 
-> 정의
+> 설명
 
 ```
-MyInfo 는 라우팅을 하지 않은 
-Index 페이지만이 존재하기 때문에
-
-react-scroll 라이브러리에 있는
-Link 와 id 를 연결하여 해당 Part 로
-Scroll 을 옮겨주는 기능
+js-cookie 와 axios 를 활용
+모드를 development 와 product 를 구분하여 선언
 ```
 <br>
 <br>
 
-> 기능
+> 선언
 
 ```javascript
-import { Link } from "react-scroll";
+import axios from "axios";
+import Cookie from "js-cookie";
 
-...
-
-// to     ) Html element 요소 중 동일한 id 위치로 scroll 이동 
-
-// spy    ) 특정 요소가 스크롤 위치에 도달했을 때, 
-//          해당 요소를 감지하고 특정 동작을 수행 가능 기능
-
-// smooth ) 부드럽게 스크롤을 이동하도록 해주는 옵션
-<Link to="1" spy={true} smooth={true}>
-    <span>Port-Folio</span>
-</Link>
-
-...
-
-<div id="1">
-    ...
-</div>
+// 객체 만들기
+const instance = axios.create({
+  baseURL:
+    process.env.NODE_ENV === "development"
+      ? "http://127.0.0.1:8000/api/v1"
+      : "https://backend.{방삼 url}/api/v1",
+  withCredentials: true,
+});
 ```
 <br>
 <br>
 
-> 컴포넌트
+> 사용
 
+<br>
+
+## &nbsp;&nbsp;`get`
 ```javascript
-import { Link } from "react-scroll";
-
-export const Nav = () => {
-    return (
-        <div className="nav">
-            <Link to="1" spy={true} smooth={true}>
-                <span>It's Me</span>
-            </Link>
-            <Link to="2" spy={true} smooth={true}>
-                <span>PortFolio</span>
-            </Link>
-            <Link to="3" spy={true} smooth={true}>
-                <span>Linked In</span>
-            </Link>
-        </div>
-    );
-}
+export const getUserInfo = () =>
+  instance.get("users/me/").then((response) => response.data);
 ```
-<br>
+
 <br>
 
-> hidden / show 를 적용한 컴포넌트
-
+## &nbsp;&nbsp;`post`<br>
+&nbsp;&nbsp;&nbsp; headers 에 csrftoken Cookie 설정
 ```javascript
-export const topBtn = () => { 
- const [hidden, setHidden] = useState(true);
-
- useEffect(()=>{
-    const handleShowTopBtn = () => {
-        if (window.scrollY > 600) {
-            setHidden(false);
-        } else {
-            setHidden(true);
-        }
+export const login = ({ username, password }) => {
+  return instance.post(
+    "users/login/",
+    { username, password },
+    {
+      headers: {
+        "X-CSRFToken": Cookie.get("csrftoken") || "",
+      },
     }
-
-    window.addEventListener("scroll", handleShowTopBtn);
-    return () => {
-        window.removeEventListener("scroll", handleShowTopBtn)
-    }
- }, [])
-
- return !hidden && (
-    <button id='top' onClick={scrollToTop}>Top</button>
- );
-}
+  );
+};
 ```
-<br>
-
-&nbsp;&nbsp;&nbsp; **`* scroll 이 600 이상이면 show 하고 `<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  `그 이하이면 hidden하게 만든 TopBtn`** 
