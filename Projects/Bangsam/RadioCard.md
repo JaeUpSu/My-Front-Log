@@ -33,32 +33,28 @@ Data List 를 선택할 수 있게 만든 모달
 
 <br>
 
-## &nbsp;&nbsp;`onSelect`
+## &nbsp;&nbsp;`onRadio`<br>
+ &nbsp;&nbsp;&nbsp; 검색을 위한 Filtering 상태 값에 저장
 ```javascript
-const onSelect = (e) => {
-    const selectedVal = e.currentTarget.getAttribute("value");
-    const selectedIdx = e.currentTarget.getAttribute("idx");
-    setBtnName(selectedVal);
-    onNextActive();
-    sessionStorage.setItem(name, selectedVal);
-    sessionStorage.setItem(name + "Idx", selectedIdx);
+  const onRadio = () => {
+    const value = sessionStorage.getItem(name);
+    const idx = optionsMenu.findIndex((val) => val.eng === name);
 
-    if (name.includes("gugunsi")) {
-      sessionStorage.setItem("ebmyeondong", "nothing");
+    sessionStorage.setItem(name, input.value);
+    if (input.value != value) {
+      setChecked(!checked);
     }
 
-    onSetAddress((items) => {
-      let nextAddress = [0, 0, 0];
-      items.forEach((item, idx) => {
-        if (name == addressKinds[idx]) {
-          nextAddress[idx] = selectedVal;
+    onSelect((opts) => {
+      const newOpts = opts.map((item, i) => {
+        if (idx != i) {
+          return item;
         } else {
-          nextAddress[idx] = item;
+          return input.value;
         }
       });
-      return nextAddress;
+      return newOpts;
     });
-    onClose();
   };
 ```
 <br>
@@ -68,7 +64,7 @@ const onSelect = (e) => {
 
 <br>
 
- &nbsp;&nbsp; &nbsp;`SelectModal.jsx`
+ &nbsp;&nbsp; &nbsp;`RadioCards.jsx`
 ```javascript
 import { useState } from "react";
 import { Flex, Box, useRadio, useRadioGroup } from "@chakra-ui/react";
