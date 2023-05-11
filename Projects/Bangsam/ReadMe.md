@@ -31,25 +31,25 @@
 
 <br>
 
-### &nbsp;&nbsp;&nbsp;[**🔗 라우팅**][sttLink]<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 라우팅**][routingLink]<br>
 
-[sttLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/ScrollToTop.md "Go MyInfo ScrollToTop"
+[routingLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/%EB%9D%BC%EC%9A%B0%ED%8C%85.md "Go Bangsam Routing"
 
-### &nbsp;&nbsp;&nbsp;[**🔗 에러 페이지**][ltiLink]<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 에러 페이지**][errLink]<br>
 
-[ltiLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/LinkToId.md "Go MyInfo LinkToId"
+[errLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/%EC%97%90%EB%9F%AC%ED%8E%98%EC%9D%B4%EC%A7%80.md "Go Bangsam ErrorPage"
 
-### &nbsp;&nbsp;&nbsp;[**🔗 API 객체**][msLink]<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 API 객체**][apiLink]<br>
 
-[msLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/MarqueeSlider.md "Go MyInfo Marquee Slider"
+[apiLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/API%20%EA%B0%9D%EC%B2%B4.md "Go Bangsam API 객체"
 
-### &nbsp;&nbsp;&nbsp;[**🔗 Custom Hooks**][pfsLink]<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 Custom Hooks**][customHooksLink]<br>
 
-[pfsLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/PortFolioSlider.md "Go MyInfo PortFolio Slider"
+[customHooksLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/Custom%20Hooks.md "Go Bangsam CustomHooks"
 
-### &nbsp;&nbsp;&nbsp;[**🔗 무한 스크롤**][fmLink]<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 무한 스크롤**][infinteScrollLink]<br>
 
-[fmLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/FeedModal.md "Go MyInfo Feed Modal"
+[infinteScrollLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/%EB%AC%B4%ED%95%9C%EC%8A%A4%ED%81%AC%EB%A1%A4.md "Go Bangsam useInfinteScroll"
 
 ### &nbsp;&nbsp;&nbsp;[**🔗 스켈레톤 로딩**][rdlLink]<br>
 

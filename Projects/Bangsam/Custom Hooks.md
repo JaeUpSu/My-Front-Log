@@ -76,6 +76,10 @@ export const useDidMountEffect = (callback, deps) => {
 ## &nbsp;&nbsp;`useInfiniteScroll`<br>
 &nbsp;&nbsp;&nbsp; UI 에 맞춰 필요한 만큼만 데이터 쿼리 Fetch<br>
 &nbsp;&nbsp;&nbsp; scroll event 로 fetching
+
+### &nbsp;&nbsp;&nbsp;[**🔗 무한 스크롤**][infinteScrollLink]<br>
+
+[infinteScrollLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/%EB%AC%B4%ED%95%9C%EC%8A%A4%ED%81%AC%EB%A1%A4.md "Go Bangsam useInfinteScroll"
 <br>
 <br>
 <br>
