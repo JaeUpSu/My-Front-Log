@@ -4,107 +4,119 @@
 <br>
 
 
-# ⚒️  `LinkToId of MyInfo Project`
+# ⚒️  `Custom Hooks of Bangsam Project`
 
 <br>
 
 
-* **정의**
-* **기능**
-* **컴포넌트**
+* **설명**
+* **선언**
+* **사용**
 
 <br>
 
 
-> 정의
+> 설명
 
 ```
-MyInfo 는 라우팅을 하지 않은 
-Index 페이지만이 존재하기 때문에
+React에서 상태 관리, 비동기 작업, 
+라이프사이클 이벤트 등을 추상화하여 
+재사용 가능한 로직을 정의하는 기능
 
-react-scroll 라이브러리에 있는
-Link 와 id 를 연결하여 해당 Part 로
-Scroll 을 옮겨주는 기능
+Hooks는 "use"라는 접두사로 시작
+useState, useEffect, useContext 등의 
+기본 Hooks를 사용
 ```
 <br>
 <br>
 
-> 기능
+> 선언
 
+<br>
+
+## &nbsp;&nbsp;`useUser`<br>
+&nbsp;&nbsp;&nbsp; Login 의 유무로 사용되는 user Hook
 ```javascript
-import { Link } from "react-scroll";
+import { useQuery } from "@tanstack/react-query";
+import { getUserInfo } from "../services/api";
 
-...
-
-// to     ) Html element 요소 중 동일한 id 위치로 scroll 이동 
-
-// spy    ) 특정 요소가 스크롤 위치에 도달했을 때, 
-//          해당 요소를 감지하고 특정 동작을 수행 가능 기능
-
-// smooth ) 부드럽게 스크롤을 이동하도록 해주는 옵션
-<Link to="1" spy={true} smooth={true}>
-    <span>Port-Folio</span>
-</Link>
-
-...
-
-<div id="1">
-    ...
-</div>
-```
-<br>
-<br>
-
-> 컴포넌트
-
-```javascript
-import { Link } from "react-scroll";
-
-export const Nav = () => {
-    return (
-        <div className="nav">
-            <Link to="1" spy={true} smooth={true}>
-                <span>It's Me</span>
-            </Link>
-            <Link to="2" spy={true} smooth={true}>
-                <span>PortFolio</span>
-            </Link>
-            <Link to="3" spy={true} smooth={true}>
-                <span>Linked In</span>
-            </Link>
-        </div>
-    );
+export default function useUser() {
+  const { isLoading, data, isError } = useQuery(["me"], getUserInfo, {
+    retry: false,
+    refetchOnWindowFocus: false,
+  });
+  
+  return {
+    userLoading: isLoading,
+    user: data,
+    isLoggedIn: !isError,
+  };
 }
 ```
-<br>
+
 <br>
 
-> hidden / show 를 적용한 컴포넌트
-
+## &nbsp;&nbsp;`useDidMountEffect`<br>
+&nbsp;&nbsp;&nbsp; 컴포넌트가 마운트된 이후에만 콜백 함수 실행
 ```javascript
-export const topBtn = () => { 
- const [hidden, setHidden] = useState(true);
+import { useRef, useEffect } from "react";
 
- useEffect(()=>{
-    const handleShowTopBtn = () => {
-        if (window.scrollY > 600) {
-            setHidden(false);
-        } else {
-            setHidden(true);
-        }
-    }
+export const useDidMountEffect = (callback, deps) => {
+  const didMount = useRef(false);
 
-    window.addEventListener("scroll", handleShowTopBtn);
-    return () => {
-        window.removeEventListener("scroll", handleShowTopBtn)
-    }
- }, [])
-
- return !hidden && (
-    <button id='top' onClick={scrollToTop}>Top</button>
- );
-}
+  useEffect(() => {
+    if (didMount.current) callback();
+    else didMount.current = true;
+  }, deps);
+};
 ```
+
 <br>
 
-&nbsp;&nbsp;&nbsp; **`* scroll 이 600 이상이면 show 하고 `<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  `그 이하이면 hidden하게 만든 TopBtn`** 
+## &nbsp;&nbsp;`useInfiniteScroll`<br>
+&nbsp;&nbsp;&nbsp; UI 에 맞춰 필요한 만큼만 데이터 쿼리 Fetch<br>
+&nbsp;&nbsp;&nbsp; scroll event 로 fetching
+<br>
+<br>
+<br>
+
+> 사용
+
+<br>
+
+## &nbsp;&nbsp;`useUser`<br>
+```javascript
+const { user, isLoggedIn, userLoading } = useUser();
+```
+
+<br>
+
+## &nbsp;&nbsp;`useDidMountEffect`<br>
+```javascript
+import React, { useState } from 'react';
+import useDidMountEffect from './useDidMountEffect';
+
+function MyComponent() {
+  const [count, setCount] = useState(0);
+
+  useDidMountEffect(() => {
+    console.log('Component did mount');
+  }, []);
+
+  useDidMountEffect(() => {
+    console.log('Count changed:', count);
+  }, [count]);
+
+  return (
+    <div>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <p>Count: {count}</p>
+    </div>
+  );
+}
+
+export default MyComponent;
+```
+
+
+
