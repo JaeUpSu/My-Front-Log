@@ -27,9 +27,9 @@ SEO 점수를 위한 helmet 설정
 > 기능
 
 <br>
+
 ```javascript
 <Helmet>
     <title>{data ? data.title : "Loading..."}</title>
 </Helmet>
-
 ```
