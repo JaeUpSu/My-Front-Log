@@ -51,31 +51,31 @@
 
 [infinteScrollLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/%EB%AC%B4%ED%95%9C%EC%8A%A4%ED%81%AC%EB%A1%A4.md "Go Bangsam useInfinteScroll"
 
-### &nbsp;&nbsp;&nbsp;[**🔗 스켈레톤 로딩**][rdlLink]<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 스켈레톤 로딩**][skeletonLink]<br>
 
-[rdlLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/ReactDJangoLinking.md "Go MyInfo React Django Linking"
+[skeletonLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/%EC%8A%A4%EC%BC%88%EB%A0%88%ED%86%A4%20%EB%A1%9C%EB%94%A9.md "Go Bangsam SkeletonLoading"
 
-### &nbsp;&nbsp;&nbsp;[**🔗 소셜 로그인**][dbLink]<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 소셜 로그인**][socialLink]<br>
 
-[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+[socialLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/%EC%86%8C%EC%85%9C%20%EB%A1%9C%EA%B7%B8%EC%9D%B8.md "Go Bangsam Social Login"
 
-### &nbsp;&nbsp;&nbsp;[**🔗 싱글 폼**][dbLink]<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 싱글 폼**][singleLink]<br>
 
-[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+[singleLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/%EC%8B%B1%EA%B8%80%20%ED%8F%BC.md "Go Bangsam SingleForm"
 
-### &nbsp;&nbsp;&nbsp;[**🔗 헤더**][dbLink]<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 헤더**][headerLink]<br>
 
-[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+[headerLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/%ED%97%A4%EB%8D%94.md "Go Bangsam Header"
 
-### &nbsp;&nbsp;&nbsp;[**🔗 이미지 카드**][dbLink]<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 이미지 카드**][houseCardLink]<br>
 
-[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
-### &nbsp;&nbsp;&nbsp;[**🔗 Select Modal**][dbLink]<br>
+[houseCardLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%B9%B4%EB%93%9C.md "Go Bangsam HouseCard"
+### &nbsp;&nbsp;&nbsp;[**🔗 Select Modal**][selectLink]<br>
 
-[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
-### &nbsp;&nbsp;&nbsp;[**🔗 Radio Card**][dbLink]<br>
+[selectLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/Select%20Modal.md "Go Bangsam Select Modal"
+### &nbsp;&nbsp;&nbsp;[**🔗 Radio Card**][radioLink]<br>
 
-[dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
+[radioLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/RadioCard.md "Go Bangsam RadioCard"
 ### &nbsp;&nbsp;&nbsp;[**🔗 Range Slider**][dbLink]<br>
 
 [dbLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/DiscordBot.md "Go MyInfo Discord Bot"
