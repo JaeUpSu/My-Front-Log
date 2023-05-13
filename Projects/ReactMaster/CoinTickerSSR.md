@@ -35,7 +35,7 @@ MyInfo 에서
 
 > 기능
 
-```python
+```javascript
 discord_url = ...
 
 // Col 별로 Contents 를 분리
