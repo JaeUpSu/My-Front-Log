@@ -4,18 +4,13 @@
 <br>
 
 
-# ⚒️  `DiscordBot of MyInfo Project`
-
-<br>
-
-<img src="./Image/myinfo_4.png" style="object-fit: cover" width="650px" height="400px"/>
+# ⚒️  `Coin & Ticker info SSR of ReactMaster Project`
 
 <br>
 
 
 * **정의**
 * **기능**
-* **컴포넌트**
 
 <br>
 
@@ -23,124 +18,84 @@
 > 정의
 
 ```
-MyInfo 에서 
-웹 개발자 소개 페이지기 때문에
+ReactMaster 에서
+Coin & Ticker info API 를 사용에 있어서
+SSR 을 적용
 
-의뢰인의 요청을 고려해서
-구현한 Discord bot 을 연결한
-요청 POST API
+dahydrate 는 재사용
+
+QueryClient 를 선언해
+prefetchQuery 를 사용하여 SSR 구현
 ```
 <br>
 <br>
 
 > 기능
 
-```javascript
-discord_url = ...
-
-// Col 별로 Contents 를 분리
-def message_column(contents):
-    prevCols = ['name','tel','email','request']
-    nextCols = ['🏷️\n이름\t\t\t','번호\t\t\t','이메일\t\t','\n요청사항\t\n']
-    
-    for i in range(len(prevCols)):
-        contents = contents.replace(prevCols[i], nextCols[i])
-
-    return contents
-
-// Contents Formatting
-def message_format(contents):
-    contents = message_column(contents)
-    return contents.replace('{','').replace('}','').replace('\'','').replace(', ','\n').replace(':', '▶️ ')
-
-// Contents 연결된 Discord 로 Send
-def send_message(datas):
-    line = "\nㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\n"
-    data = {'content':'{}{}'.format(line,message_format(str(datas)))}
-    print(datas)
-    response = requests.post(discord_url, data=data)
-    print(response)
-
-```
-<br>
 <br>
 
-> 컴포넌트
-
+## &nbsp;&nbsp; `SSR`
 ```javascript
-... 
+import {
+  useQuery,
+  QueryClient,
+  dehydrate,
+  DehydratedState,
+} from "@tanstack/react-query";
+import { GetServerSidePropsResult } from "next";
 
-<Modal show={show} onHide={handleClose}>
-    <Modal.Header>
-      <Modal.Title>Request</Modal.Title>
-    </Modal.Header>
-    <Modal.Body>
-      If you have any requests for me, please contact me here.
-      <div class="mb-3">
-        <label
-          for="recipient-name"
-          class="col-form-label"
-          className={styles.modal_lebel}
-        >
-          Username:
-        </label>
-        <input
-          type="text"
-          class="form-control"
-          id="recipient-name"
-          name="name"
-          onChange={onChangeMessage}
-        />
-      </div>
-      <div class="mb-3">
-        <label for="tel-text" class="col-form-label">
-          tel:
-        </label>
-        <input
-          type="text"
-          class="form-control"
-          id="recipient-tel"
-          name="tel"
-          placeholder="- 없이 연락처를 입력해주세요. (선택)"
-          onChange={onChangeMessage}
-        />
-      </div>
-      <div class="mb-3">
-        <label for="email-text" class="col-form-label">
-          Email:
-        </label>
-        <input
-          type="text"
-          class="form-control"
-          id="recipient-email"
-          name="email"
-          onChange={onChangeMessage}
-        />
-      </div>
-      <div class="mb-3">
-        <label for="message-text" class="col-form-label">
-          Message:
-        </label>
-        <textarea
-          class="form-control"
-          className={styles.modal_area}
-          id="message-text"
-          name="request"
-          onChange={onChangeMessage}
-        ></textarea>
-      </div>
-    </Modal.Body>
-    <Modal.Footer>
-      <Button
-        className="btn_close"
-        variant="secondary"
-        onClick={handleClose}
-      >
-        닫기
-      </Button>
-      <Button variant="btn btn-primary" onClick={sendMessage}>
-        Send message
-      </Button>
-    </Modal.Footer>
-  </Modal>
+...
+
+  const { data: infoData, isLoading: infoLoading } = useQuery(
+    ["info", id],
+    getCoinInfo,
+    {
+      onSuccess: (data) => {
+        console.log("coin success", data);
+      },
+    }
+  );
+
+  const { data: priceInfoData, isLoading: priceLoading } = useQuery(
+    ["ticker", id],
+    getCoinTicker,
+    {
+      refetchInterval: 5000,
+    }
+  );
+
+...
+
+interface Props {
+  params: {
+    id: string | null | undefined;
+    dehydratedState: DehydratedState | null;
+  };
+}
+
+export async function getServerSideProps({
+  params,
+}: Props): Promise<GetServerSidePropsResult<Props>> {
+  try {
+    // TypeScript 컴파일러에게 params?.id 표현식을 string 유형인 것처럼 처리하도록 지시
+    const id = params?.id as string;
+
+    const queryClient = new QueryClient();
+    await queryClient.prefetchQuery(["info", id], getCoinInfo);
+    await queryClient.prefetchQuery(["ticker", id], getCoinTicker);
+
+    return {
+      props: {
+        params: {
+          id,
+          dehydratedState: dehydrate(queryClient),
+        },
+      },
+    };
+  } catch (error) {
+    // Handle the error
+    console.error("Error in Coin SSR", error);
+    return <p>Something went wrong...</p>;
+  }
+}
 ```
