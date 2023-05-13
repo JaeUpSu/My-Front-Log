@@ -4,18 +4,14 @@
 <br>
 
 
-# ⚒️  `DiscordBot of MyInfo Project`
-
-<br>
-
-<img src="./Image/myinfo_4.png" style="object-fit: cover" width="650px" height="400px"/>
+# ⚒️  `GlobalStyle of ReactMaster Project`
 
 <br>
 
 
 * **정의**
-* **기능**
-* **컴포넌트**
+* **GlobalStyle**
+* **ThemeProvider**
 
 <br>
 
@@ -23,124 +19,113 @@
 > 정의
 
 ```
-MyInfo 에서 
-웹 개발자 소개 페이지기 때문에
+ReactMaster 에서
+전역으로 사용되는 GlobalStyle
 
-의뢰인의 요청을 고려해서
-구현한 Discord bot 을 연결한
-요청 POST API
+해당 GlobalStyle 을 
+ThemeProvider 에 적용하여 Custom 하게 생성
 ```
 <br>
 <br>
 
 > 기능
 
+<br>
+
+## &nbsp;&nbsp; `theme.ts`<br>
+&nbsp;&nbsp; &nbsp; GlobalStyle 선언
 ```javascript
-discord_url = ...
+import { createGlobalStyle } from "styled-components";
 
-// Col 별로 Contents 를 분리
-def message_column(contents):
-    prevCols = ['name','tel','email','request']
-    nextCols = ['🏷️\n이름\t\t\t','번호\t\t\t','이메일\t\t','\n요청사항\t\n']
-    
-    for i in range(len(prevCols)):
-        contents = contents.replace(prevCols[i], nextCols[i])
-
-    return contents
-
-// Contents Formatting
-def message_format(contents):
-    contents = message_column(contents)
-    return contents.replace('{','').replace('}','').replace('\'','').replace(', ','\n').replace(':', '▶️ ')
-
-// Contents 연결된 Discord 로 Send
-def send_message(datas):
-    line = "\nㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\n"
-    data = {'content':'{}{}'.format(line,message_format(str(datas)))}
-    print(datas)
-    response = requests.post(discord_url, data=data)
-    print(response)
-
+export const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+    display: none;
+}
+body {
+  line-height: 1;
+}
+menu, ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color:${(props) => props.theme.bgColor};
+  color:${(props) => props.theme.textColor}
+}
+a {
+  text-decoration:none;
+  color:inherit;
+}
+`;
 ```
-<br>
+
 <br>
 
-> 컴포넌트
-
+## &nbsp;&nbsp; `ThemeProvider.tsx`<br>
+&nbsp;&nbsp; &nbsp; _app.tsx 에 적용할 ThemeProvider 선언
 ```javascript
-... 
+import { ThemeProvider as StyledThemeProvider } from "styled-components";
+import { useRecoilState } from "recoil";
+import { lightTheme, darkTheme } from "@/styles/theme";
+import { isDarkAtom } from "../atom";
+import { GlobalStyle } from "@/styles/theme";
 
-<Modal show={show} onHide={handleClose}>
-    <Modal.Header>
-      <Modal.Title>Request</Modal.Title>
-    </Modal.Header>
-    <Modal.Body>
-      If you have any requests for me, please contact me here.
-      <div class="mb-3">
-        <label
-          for="recipient-name"
-          class="col-form-label"
-          className={styles.modal_lebel}
-        >
-          Username:
-        </label>
-        <input
-          type="text"
-          class="form-control"
-          id="recipient-name"
-          name="name"
-          onChange={onChangeMessage}
-        />
-      </div>
-      <div class="mb-3">
-        <label for="tel-text" class="col-form-label">
-          tel:
-        </label>
-        <input
-          type="text"
-          class="form-control"
-          id="recipient-tel"
-          name="tel"
-          placeholder="- 없이 연락처를 입력해주세요. (선택)"
-          onChange={onChangeMessage}
-        />
-      </div>
-      <div class="mb-3">
-        <label for="email-text" class="col-form-label">
-          Email:
-        </label>
-        <input
-          type="text"
-          class="form-control"
-          id="recipient-email"
-          name="email"
-          onChange={onChangeMessage}
-        />
-      </div>
-      <div class="mb-3">
-        <label for="message-text" class="col-form-label">
-          Message:
-        </label>
-        <textarea
-          class="form-control"
-          className={styles.modal_area}
-          id="message-text"
-          name="request"
-          onChange={onChangeMessage}
-        ></textarea>
-      </div>
-    </Modal.Body>
-    <Modal.Footer>
-      <Button
-        className="btn_close"
-        variant="secondary"
-        onClick={handleClose}
-      >
-        닫기
-      </Button>
-      <Button variant="btn btn-primary" onClick={sendMessage}>
-        Send message
-      </Button>
-    </Modal.Footer>
-  </Modal>
+type AppProps = {
+  children: React.ReactNode;
+};
+
+export const ThemeProvider = ({ children }: AppProps) => {
+  const [isDark, setIsDark] = useRecoilState(isDarkAtom);
+  const handleTheme = () => setIsDark((_isDark) => !_isDark);
+
+  return (
+    <StyledThemeProvider theme={isDark ? darkTheme : lightTheme}>
+      <GlobalStyle />
+      <button onClick={handleTheme}>Theme Change</button>
+      {children}
+    </StyledThemeProvider>
+  );
+};
 ```
