@@ -11,6 +11,7 @@
 
 * **정의**
 * **기능**
+* **실제 코드**
 
 <br>
 
@@ -34,6 +35,7 @@ next/dynamic을 사용하면 필요한 경우에만
 
 <br>
 
+## &nbsp;&nbsp; `동적모듈`
 ```javascript
 import dynamic from 'next/dynamic';
 
@@ -49,4 +51,46 @@ function MyPage() {
     </div>
   );
 }
+```
+
+<br>
+
+> 실제코드
+
+<br>
+
+&nbsp;
+&nbsp;
+&nbsp; ▶️ 
+&nbsp; `url 동적 라우팅 주소대로 동적 모듈`
+```javascript
+const Chart = dynamic(() => import("../components/Chart"));
+const Price = dynamic(() => import("../components/Price"));
+
+...
+
+  const renderComponent = () => {
+    switch (component) {
+      case "Chart":
+        return <Chart coinId={id} />;
+      case "Price":
+        return <Price coinId={id} />;
+      default:
+        return null;
+    }
+  };
+
+  ....
+
+      <nav>
+        <Tabs slot="coin-tabs">
+          <Tab isActive={component !== "Price"} slot="coin-1st-tab">
+            <a href={`/${id}?e=Price`}>Price</a>
+          </Tab>
+          <Tab isActive={component !== "Chart"} slot="coin-2nd-tab">
+            <a href={`/${id}?e=Chart`}>Chart</a>
+          </Tab>
+        </Tabs>
+      </nav>
+      {renderComponent()}
 ```
