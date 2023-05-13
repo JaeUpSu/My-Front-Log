@@ -4,18 +4,14 @@
 <br>
 
 
-# ⚒️  `DiscordBot of MyInfo Project`
-
-<br>
-
-<img src="./Image/myinfo_4.png" style="object-fit: cover" width="650px" height="400px"/>
+# ⚒️  `Styled-Components of ReactMaster Project`
 
 <br>
 
 
 * **정의**
+* **사용코드**
 * **기능**
-* **컴포넌트**
 
 <br>
 
@@ -23,124 +19,61 @@
 > 정의
 
 ```
-MyInfo 에서 
-웹 개발자 소개 페이지기 때문에
+Next.js 에서 
+Styled-Components 를 사용한다면
 
-의뢰인의 요청을 고려해서
-구현한 Discord bot 을 연결한
-요청 POST API
+SSR(서버 쪽 렌더링) 중에 스타일이 
+지정된 각 구성 요소에 고유한 해시를 
+자동으로 추가하기 때문에 발생
+
+ => Prop `className` did not match.
 ```
 <br>
+<br>
+
+> 사용코드
+
+```javascript
+const { data, isLoading } = useQuery(["ohlcv", coinId], getCoinHistory, {
+  refetchInterval: 10000,
+});
+```
+
 <br>
 
 > 기능
 
+<br>
+
+## &nbsp;&nbsp; `자동 refetch`
 ```javascript
-discord_url = ...
+const { data, refetch } = useQuery("myData", fetchMyData, {
+  refetchInterval: 5000, // 5초마다 자동 refetch
+});
+```
 
-// Col 별로 Contents 를 분리
-def message_column(contents):
-    prevCols = ['name','tel','email','request']
-    nextCols = ['🏷️\n이름\t\t\t','번호\t\t\t','이메일\t\t','\n요청사항\t\n']
-    
-    for i in range(len(prevCols)):
-        contents = contents.replace(prevCols[i], nextCols[i])
+<br>
 
-    return contents
+## &nbsp;&nbsp; `수동 refetch`
+```javascript
+const { data, refetch } = useQuery("myData", fetchMyData);
 
-// Contents Formatting
-def message_format(contents):
-    contents = message_column(contents)
-    return contents.replace('{','').replace('}','').replace('\'','').replace(', ','\n').replace(':', '▶️ ')
-
-// Contents 연결된 Discord 로 Send
-def send_message(datas):
-    line = "\nㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\n"
-    data = {'content':'{}{}'.format(line,message_format(str(datas)))}
-    print(datas)
-    response = requests.post(discord_url, data=data)
-    print(response)
-
+const handleButtonClick = () => {
+  refetch(); // 버튼 클릭 시 수동 refetch
+};
 ```
 <br>
-<br>
 
-> 컴포넌트
-
+## &nbsp;&nbsp; `외부요소 refetch`
 ```javascript
-... 
+const { data } = useQuery("myData", fetchMyData);
 
-<Modal show={show} onHide={handleClose}>
-    <Modal.Header>
-      <Modal.Title>Request</Modal.Title>
-    </Modal.Header>
-    <Modal.Body>
-      If you have any requests for me, please contact me here.
-      <div class="mb-3">
-        <label
-          for="recipient-name"
-          class="col-form-label"
-          className={styles.modal_lebel}
-        >
-          Username:
-        </label>
-        <input
-          type="text"
-          class="form-control"
-          id="recipient-name"
-          name="name"
-          onChange={onChangeMessage}
-        />
-      </div>
-      <div class="mb-3">
-        <label for="tel-text" class="col-form-label">
-          tel:
-        </label>
-        <input
-          type="text"
-          class="form-control"
-          id="recipient-tel"
-          name="tel"
-          placeholder="- 없이 연락처를 입력해주세요. (선택)"
-          onChange={onChangeMessage}
-        />
-      </div>
-      <div class="mb-3">
-        <label for="email-text" class="col-form-label">
-          Email:
-        </label>
-        <input
-          type="text"
-          class="form-control"
-          id="recipient-email"
-          name="email"
-          onChange={onChangeMessage}
-        />
-      </div>
-      <div class="mb-3">
-        <label for="message-text" class="col-form-label">
-          Message:
-        </label>
-        <textarea
-          class="form-control"
-          className={styles.modal_area}
-          id="message-text"
-          name="request"
-          onChange={onChangeMessage}
-        ></textarea>
-      </div>
-    </Modal.Body>
-    <Modal.Footer>
-      <Button
-        className="btn_close"
-        variant="secondary"
-        onClick={handleClose}
-      >
-        닫기
-      </Button>
-      <Button variant="btn btn-primary" onClick={sendMessage}>
-        Send message
-      </Button>
-    </Modal.Footer>
-  </Modal>
+// 다른 컴포넌트에서 refetch 함수를 받아서 사용
+<OtherComponent refetch={refetch} />
+
+// OtherComponent 내부에서 refetch 함수 호출
+const { refetch } = props;
+const handleButtonClick = () => {
+  refetch(); // 외부 요소에서 refetch
+};
 ```
