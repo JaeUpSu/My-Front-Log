@@ -20,7 +20,7 @@
 
 ```
 NomadCoders 에서 React Master 강의 내용의 
-코드 전부 Next.js 적용하여 ssr 한 프로젝트
+코드 전부 Next.js 적용하여 SSR 한 프로젝트
 ```
 <br>
 <br>
