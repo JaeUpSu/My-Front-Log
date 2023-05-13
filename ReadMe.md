@@ -344,7 +344,8 @@ useState 와 useEffect 분석
 - [styled-components][nextStyledComponentsLink]
 - [className][nextClassNameLink]
 - [NextScript][nextScriptLink]
-- [NextPage][nextAppLink]
+- [NextPage][nextPageLink]
+- [ErrorPage][nextErrorPageLink]
 
 <br>
 <br>
@@ -403,6 +404,8 @@ useState 와 useEffect 분석
 
 
 
+
+[nextErrorPageLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/ErrorError.md "Go Next ErrorPage"
 
 [nextPageLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/NextPage.md "Go Next Page"
 
