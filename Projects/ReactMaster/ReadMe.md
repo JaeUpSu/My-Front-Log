@@ -4,7 +4,7 @@
 <br>
 
 
-# ⚒️  `MyInfo 소개`
+# ⚒️  `ReactMaster 소개`
 
 <br>
 
@@ -19,7 +19,8 @@
 > 소개
 
 ```
-Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
+NomadCoders 에서 React Master 강의 내용의 
+코드 전부 Next.js 적용하여 ssr 한 프로젝트
 ```
 <br>
 <br>
@@ -28,15 +29,26 @@ Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
 
 <br>
 
-### &nbsp;&nbsp;&nbsp;**`🔗 Scroll To Top`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 Marquee Slider`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 PortFolio Slider`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 Feed Modal (+ Thumbnail)`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 Coin SSR`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 Dynamic Routing`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 Styled Components Settings`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 useQuery refetch`**<br>
+
+### &nbsp;&nbsp;&nbsp;**`🔗 Coin Info & Ticker Info SSR`**<br>
 
 <br>
 
-### &nbsp;&nbsp;&nbsp;**`🔗 React 와 Django Linking`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 Request Discord Bot`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 Global Style`**<br>
+
+### &nbsp;&nbsp;&nbsp;**`🔗 Drag & Drop`**<br>
+
+<br>
+
+### &nbsp;&nbsp;&nbsp;**`🔗 useMatch`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 Styled Components props & styled`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 framer-motion Header Animation`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 framer-motion Home Animation`**<br>
+
 
 <br>
 <br>
@@ -50,16 +62,15 @@ Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
 
 ```
 1 )  
-        Android App 과 랜딩페이지 이후로 처음으로 
-        스스로 Front, Back 모두 설계하고 구현한 Web
+        처음으로 임의로 Next.js 를 적용하여 성공
 
 2 )
-        Django 와 React 를 연결하는 것이 이번 프로젝트에서
-        Cors 와 Csrf_token 등 가장 힘든 챌린지였는데 성공
+        다양한 Animation 구현 방법, useDropzone 등 새로운
+        유익한 라이브러리를 익힘
 
 3 )
-        구현하게 된 동기와 구성에 있어 만족했고
-        그런 관점에서 Discord bot 을 통한 Request를 구현
+        Next.js 를 사용하면 virtual Dom 을 고려하여
+        ssr 해야하고 className 충돌 등 챌린지를 해결
 ```
 <br>
 
@@ -67,11 +78,12 @@ Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
 <br>
 
 ```
-반응형과 디자인에 있어서 일관성 있고 
-직관적이여야 하는 점이 설계 과정에서 문제
+백퍼센트 이해를 한 단계가 아니라서
+SSR 하는 데 많은 시간이 소요
 
-자동화란 개념이 많이 부족해서 DB 에 
-직접 입력하는 과정이 문제
+Animation 또한 마찬가지
+
+Craco 의 이해 부족
 ```
 <br>
 
@@ -79,8 +91,9 @@ Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
 <br>
 
 ```
-큰 틀과 구성을 가지고 반응형과 디자인을 
-Sass 또는 Styled-components 로 제작
+Next.js 의 이해와 적용
 
-Front 에서 DB 에 등록하는 기능을 구현
+framer-motion 의 이해와 적용
+
+Craco 의 이해와 적용
 ```
