@@ -30,7 +30,7 @@ NomadCoders 에서 React Master 강의 내용의
 <br>
 
 ### &nbsp;&nbsp;&nbsp;**`🔗 Coin SSR`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 Dynamic Routing`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 Dynamic Module`**<br>
 ### &nbsp;&nbsp;&nbsp;**`🔗 Styled Components Settings`**<br>
 ### &nbsp;&nbsp;&nbsp;**`🔗 useQuery refetch`**<br>
 
