@@ -32,6 +32,8 @@ _document.js 파일에서 사용
 HTML 문서에 Next.js에 필요한 스크립트를 
 자동으로 추가해주는 역할
 
+Next.js에서 자동으로 처리되는 것
+
 NextScriptProps
  ㄴ> NextScript 컴포넌트의 속성(props) 타입
 ```
@@ -81,6 +83,7 @@ SSR에 필요한 스크립트를
 
 <br>
 
+## &nbsp;&nbsp; `_document.tsx`
 ```javascript
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
