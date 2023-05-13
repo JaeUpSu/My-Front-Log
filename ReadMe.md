@@ -334,8 +334,17 @@ useState 와 useEffect 분석
 ####  🦴 Next js
 
 - [Next.js][nextLink]
+- [내장기능][nextInLink]
 - [_document][nextDocumentLink]
 - [_app][nextAppLink]
+- [SSR][nextSSRLink]
+- [SSG][nextSSGLink]
+- [라우팅][nextRoutingLink]
+- [dehydrate][nextDehydrateLink]
+- [styled-components][nextStyledComponentsLink]
+- [className][nextClassNameLink]
+- [NextScript][nextScriptLink]
+- [NextPage][nextAppLink]
 
 <br>
 <br>
@@ -394,6 +403,27 @@ useState 와 useEffect 분석
 
 
 
+
+[nextPageLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/NextPage.md "Go Next Page"
+
+[nextScriptLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/NextScript.md "Go Next Script"
+
+[nextClassNameLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/className.md "Go Next ClassName"
+
+[nextStyledComponentsLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/styled-components.md "Go Next StyledComponents"
+
+[nextDehydrateLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/dehydrate.md "Go Next Dehydrate"
+
+[nextRoutingLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/routing.md "Go Next Routing"
+
+
+[nextSSGLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/SSG.md "Go Next SSG"
+
+
+[nextSSRLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/ssr.md "Go Next SSR"
+
+
+[nextInLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/%EB%82%B4%EC%9E%A5%EA%B8%B0%EB%8A%A5.md "Go Next 내장기능"
 
 [nextAppLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/_app.md "Go Next _document"
 
