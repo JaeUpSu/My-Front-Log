@@ -117,7 +117,7 @@ SSR을 사용하면
 
 <br>
 
-&nbsp;&nbsp;&nbsp; - Recoil 이랑 react-query 사용할 때
+&nbsp;&nbsp;&nbsp; Recoil 이랑 react-query 사용할 때
 ```javascript
 import { AppProps } from 'next/app';
 import { QueryClient, QueryClientProvider } from 'react-query';
@@ -139,11 +139,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 export default MyApp;
 ```
-
+<br>
 
 📢  SSR은 필요한 경우에만 사용하는 것이 좋습니다. 
 <br>모든 페이지에 SSR을 적용하면 <br>
 서버 부하가 증가할 수 있으므로, <br><br>SSR이 필요한 페이지에만 getServerSideProps를 <br>사용하는 것이 좋음
 
-<br><br><br>
+<br><br>
 📢  일반적인 정적 컨텐츠를 렌더링하는 페이지의 경우, <br>정적 생성(Static Generation)을 사용하여 <br>초기 로딩 속도와 성능을 향상
