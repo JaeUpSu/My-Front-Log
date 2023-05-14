@@ -405,6 +405,12 @@ useState 와 useEffect 분석
 
 
 
+[testTddLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/tdd.md "Go Test Tdd"
+
+
+[testJestLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/jest.md "Go Test Jest"
+
+
 [nextErrorPageLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/ErrorError.md "Go Next ErrorPage"
 
 [nextPageLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/NextPage.md "Go Next Page"
