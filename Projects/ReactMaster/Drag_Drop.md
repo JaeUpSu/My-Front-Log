@@ -8,6 +8,9 @@
 
 <br>
 
+<img src="./Image/dnd.gif" style="object-fit: cover" width="500px" height="auto"/>
+
+<br>
 
 * **정의**
 * **설치**
