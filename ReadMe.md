@@ -353,12 +353,19 @@ useState 와 useEffect 분석
 ####  🦴 Test
 
 - [Test][testLink]
-    - [TDD][sentryLink]    
+- [TDD][testTddLink]
+- [단위테스트][testUnitLink]
+- [E2E 테스트][testE2ELink]
+- [MSW][testMSWLink]
+- [Matcher][testMatcherLink] 
+- [CI/CD][testCICDLink]    
+- [자동화][testAutoLink]    
+- [RTL][testRTLLink]
 
 <br/>
 
-- [Jest][sentryLink]
-    - [환경설정][sentryEnvLink]
+- [Jest][testJestLink]
+    - [환경설정][testJestEnvLink]
 
 <br>
 <br>
@@ -407,9 +414,18 @@ useState 와 useEffect 분석
 
 [testTddLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/tdd.md "Go Test Tdd"
 
+[testAutoLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/%EC%9E%90%EB%8F%99%ED%99%94.md "Go Test 자동화"
+[testMSWLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/msw.md "Go Test MSW"
+[testRTLLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/RTL.md "Go Test RTL"
+[testMatcherLink]: hhttps://github.com/JaeUpSu/My-Front-Log/blob/main/Test/Matcher.md "Go Test Matcher"
+[testCICDLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/CI_CD.md "Go Test CI/CD"
+[testE2ELink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/e2e.md "Go Test E2E"
+[testUnitLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/%EB%8B%A8%EC%9C%84%ED%85%8C%EC%8A%A4%ED%8A%B8.md "Go Test Unit"
+
 
 [testJestLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/jest.md "Go Test Jest"
 
+[testJestEnvLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/Jest%20%ED%99%98%EA%B2%BD%EC%84%B8%ED%8C%85.md "Go Test Jest 세팅"
 
 [nextErrorPageLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Next.js/ErrorError.md "Go Next ErrorPage"
 
