@@ -4,7 +4,7 @@
 <br>
 
 
-# ⚒️  `MyInfo 소개`
+# ⚒️  `Coding Garden 소개`
 
 <br>
 
@@ -19,7 +19,7 @@
 > 소개
 
 ```
-Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
+유저별 대시보드 제공에 중점을 둔 강의 사이트
 ```
 <br>
 <br>
@@ -28,15 +28,41 @@ Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
 
 <br>
 
-### &nbsp;&nbsp;&nbsp;**`🔗 Scroll To Top`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 Marquee Slider`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 PortFolio Slider`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 Feed Modal (+ Thumbnail)`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 라우팅`**<br>
+
+### &nbsp;&nbsp;&nbsp;**`🔗 Test Code 환경설정`**<br>
+
+### &nbsp;&nbsp;&nbsp;**`🔗 Test Code`**<br>
+
+### &nbsp;&nbsp;&nbsp;**`🔗 MSW API`**<br>
+
+### &nbsp;&nbsp;&nbsp;**`🔗 썸네일`**<br>
+
+### &nbsp;&nbsp;&nbsp;**`🔗 미리보기`**<br>
+
+### &nbsp;&nbsp;&nbsp;**`🔗 숫자 단위 쉼표 구분`**<br>
+
+### &nbsp;&nbsp;&nbsp;**`🔗 레이아웃 컴포넌트`**<br>
+
+### &nbsp;&nbsp;&nbsp;**`🔗 axios create instance ( login active )`**<br>
+
+### &nbsp;&nbsp;&nbsp;**`🔗 SideBar + Outlet`**<br>
+
+### &nbsp;&nbsp;&nbsp;**`🔗 Skeleton Loading`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 DarkMode & useColorMode`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 커스텀 훅`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 Test id + 커스텀 컴포넌트`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 그리드 레이아웃`**<br>
+
 
 <br>
 
-### &nbsp;&nbsp;&nbsp;**`🔗 React 와 Django Linking`**<br>
-### &nbsp;&nbsp;&nbsp;**`🔗 Request Discord Bot`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 SCSS`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 상태관리 Recoil`**<br>
+
+### &nbsp;&nbsp;&nbsp;**`🔗 결제 툴 PortOne`**<br>
+### &nbsp;&nbsp;&nbsp;**`🔗 모니터링 툴 Sentry`**<br>
+
 
 <br>
 <br>
@@ -50,16 +76,15 @@ Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
 
 ```
 1 )  
-        Android App 과 랜딩페이지 이후로 처음으로 
-        스스로 Front, Back 모두 설계하고 구현한 Web
+        강의사이트에서 데이터 시각화를 주제로
+        대시보드 위주로 구현을 성공한 Web
 
 2 )
-        Django 와 React 를 연결하는 것이 이번 프로젝트에서
-        Cors 와 Csrf_token 등 가장 힘든 챌린지였는데 성공
+        Test Code 를 Typescript 의 확장자
+        TS 와 TSX 모두 JEST & RTL 모두 가능하게 환경 설정 성공
 
 3 )
-        구현하게 된 동기와 구성에 있어 만족했고
-        그런 관점에서 Discord bot 을 통한 Request를 구현
+        팀원들의 코드를 디버깅 도와주면서 해결
 ```
 <br>
 
@@ -67,11 +92,11 @@ Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
 <br>
 
 ```
-반응형과 디자인에 있어서 일관성 있고 
-직관적이여야 하는 점이 설계 과정에서 문제
+반응형 디자인을 제대로 구현하지 못한 점
 
-자동화란 개념이 많이 부족해서 DB 에 
-직접 입력하는 과정이 문제
+명확한 목적을 가지지 않고 Test Code 를 작성한 점
+
+모니터링을 하지만 성능을 올리는 작업을 따로 하지 못한 점
 ```
 <br>
 
@@ -79,8 +104,11 @@ Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
 <br>
 
 ```
-큰 틀과 구성을 가지고 반응형과 디자인을 
-Sass 또는 Styled-components 로 제작
+Next.js 를 통한 SSR 하기
 
-Front 에서 DB 에 등록하는 기능을 구현
+Sentry 에 보여지는 성능을 코드 분할, 번들 수정하면서 올리는 작업
+
+명확한 목적을 가지는 UNIT, INTEGRATION, E2E 테스트 작성하기
+
+d3 를 이용한 커스텀 차트 만들기
 ```
