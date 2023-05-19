@@ -27,6 +27,7 @@
 
 - ## 👀 Study 기록
     - [🦴 Github](#-github)
+    - [🦴 JavaScript](#-javascript)
     - [🦴 TypeScript](#-typescript)
     - [🦴 ES6](#-es6)
     - [🦴 W3C 웹 표준](#-w3c-웹-표준)
@@ -278,6 +279,17 @@ useState 와 useEffect 분석
     - [문법][gitMdSyntaxLink]
 
 <br>
+
+<br>
+
+####  🦴 JavaScript
+
+- [Math 의 내장 기능들][jsMathLink]
+- [Number 의 내장 기능들][jsNumberLink]
+- [배열의 내장 기능들][jsArrLink]
+- [문자열의 내장 기능들][jsStringLink]
+- [스프레드 활용][jsSpreadLink]
+
 <br>
 
 ####  🦴 TypeScript
@@ -402,6 +414,12 @@ useState 와 useEffect 분석
 
 <!-- - [프로그래머스][sentryLink] -->
 
+
+[jsMathLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/JavaScript/Math%20%EA%B8%B0%EB%8A%A5%EB%93%A4.md "Go JS Math"
+[jsNumberLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/JavaScript/Number%20%EA%B8%B0%EB%8A%A5%EB%93%A4.md "Go JS Math"
+[jsArrLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/JavaScript/%EB%B0%B0%EC%97%B4%EC%9D%98%20%EA%B8%B0%EB%8A%A5%EB%93%A4.md "Go JS Math"
+[jsStringLink]:https://github.com/JaeUpSu/My-Front-Log/blob/main/JavaScript/%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98%20%EA%B8%B0%EB%8A%A5%EB%93%A4.md "Go JS Math"
+[jsSpreadLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/JavaScript/%EC%8A%A4%ED%94%84%EB%A0%88%EB%93%9C%20%EC%97%B0%EC%82%B0%EC%9E%90.md "Go JS Math"
 
 [testTddLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Test/tdd.md "Go Test Tdd"
 
