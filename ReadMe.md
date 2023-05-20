@@ -41,7 +41,8 @@
 <br>
 <br>
 
-- [🔗 Coding Test](#-coding-test)
+- ## 🔗 Coding Test
+    - ## [🔩 Hacker Rank](#-coding-test)
 
  
 <br>
