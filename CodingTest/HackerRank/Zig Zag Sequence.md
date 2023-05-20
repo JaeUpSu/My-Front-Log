@@ -35,7 +35,7 @@
 
 <br>
 
-- arr 에서 `k = (arr.length + 1) / 2` 기준으로 좌우로 배열 추출
+- arr 에서 `k = arr.length / 2` 기준으로 좌우로 배열 추출
     - 좌 : arr.slice(0, k)
     - 우 : arr.slice(k)
 
@@ -59,15 +59,11 @@
 ```typescript
 function processData(input) {
   //Enter your code here
-  let builtArray = [];
-  for (let i = 4; i < input.length; i++) {
-    if (input[i] !== ' ') {
-      builtArray.push(+input[i]);
-    }
-  }
+  let arr = [...input.split("\n")[2]];
+  const k = arr.length / 2;
   
-  let firstHalf = builtArray.slice(0, (builtArray.length / 2)).sort((a, b) => a - b);
-  let secondHalf = builtArray.slice((builtArray.length / 2)).sort((a, b) => b - a);
+  let firstHalf = arr.slice(0, k).sort((a, b) => a - b);
+  let secondHalf = arr.slice(k).sort((a, b) => b - a);
   
   let zigzagArray = firstHalf.concat(secondHalf);
   
