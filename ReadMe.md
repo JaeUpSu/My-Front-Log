@@ -12,6 +12,7 @@
 
 - ## 🗣️ 나의 발표 영상
   - [📹 React 라이프사이클 발표](#-react-라이프사이클-발표)
+  - [📹 코딩가든 프로젝트 발표](#-코딩가든-프로젝트-발표)
   
   <br>
   <br>
@@ -43,9 +44,9 @@
 
 - ## 🔗 코딩 테스트
  
-    - [🔩 백준](#-coding-test)
-    - [🔩 프로그래머스](#-coding-test)
-    - [🔩 Hacker Rank](#-coding-test)
+    - [🔩 백준](#-백준)
+    - [🔩 프로그래머스](#-프로그래머스)
+    - [🔩 Hacker Rank](#-hacker-rank)
 
  
 <br>
@@ -71,6 +72,13 @@ useState 와 useEffect 분석
 [![김현수 _ React 라이프사이클](https://img.youtube.com/vi/hSh2BsnA9Dg/0.jpg)](https://www.youtube.com/watch?v=hSh2BsnA9Dg?t=0s) 
 
 <br>
+
+## `📹 코딩가든 프로젝트 발표`
+
+<br>
+
+> 대시보드를 통한 데이터 시각화 위주의 강의 사이트 <br>
+테스트 코드와 모니터링 Sentry 를 설정
 
 ## ⬇️ Click !!!
 
@@ -424,7 +432,11 @@ useState 와 useEffect 분석
 
 ## 🔗 Coding Test
 
+####  [🔩 백준][bjLink]
 
+####  [🔩 프로그래머스][programmersLink]
+
+####  [🔩 Hacker Rank][hackerrankLink]
 
 
 
@@ -432,7 +444,9 @@ useState 와 useEffect 분석
 
 <br/>
 
-<!-- - [프로그래머스][sentryLink] -->
+[bjLink]: https://github.com/JaeUpSu/My-Front-Log/tree/main/CodingTest/%EB%B0%B1%EC%A4%80 "Go Coding Test 백준"
+[hackerrankLink]: https://github.com/JaeUpSu/My-Front-Log/tree/main/CodingTest/HackerRank "Go Coding Test HackerRank"
+[programmersLink]: https://github.com/JaeUpSu/My-Front-Log/tree/main/CodingTest/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4 "Go Coding Test 프로그래머스"
 
 [saasLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/As%20A%20Service/SaaS.md "Go SAAS"
 [jsMathLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/JavaScript/Math%20%EA%B8%B0%EB%8A%A5%EB%93%A4.md "Go JS Math"
