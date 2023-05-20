@@ -12,6 +12,7 @@
 
 - ## 🗣️ 나의 발표 영상
   - [📹 React 라이프사이클 발표](#-react-라이프사이클-발표)
+  - [📹 코딩가든 프로젝트 발표](#-코딩가든-프로젝트-발표)
   
   <br>
   <br>
@@ -71,6 +72,13 @@ useState 와 useEffect 분석
 [![김현수 _ React 라이프사이클](https://img.youtube.com/vi/hSh2BsnA9Dg/0.jpg)](https://www.youtube.com/watch?v=hSh2BsnA9Dg?t=0s) 
 
 <br>
+
+## `📹 코딩가든 프로젝트 발표`
+
+<br>
+
+> 대시보드를 통한 데이터 시각화 위주의 강의 사이트 <br>
+테스트 코드와 모니터링 Sentry 를 설정
 
 ## ⬇️ Click !!!
 
