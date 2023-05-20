@@ -42,7 +42,7 @@
 <br>
 
 - ## 🔗 Coding Test
-    - ## [🔩 Hacker Rank](#-coding-test)
+    - [🔩 Hacker Rank](#-coding-test)
 
  
 <br>
