@@ -79,6 +79,16 @@ upper left quadrant 인 n x n 의 크기의 요소의 합이 가장 큰 값을 �
 
 - 이 4 군데의 값중 가장 큰 값이 좌측 상단에 오게되고 해당 값들을 더하기
 
+<br>
+<br>
+
+
+-  | |0|1|2|3|
+   |---|---|---|---|---|
+   |0|**`a`**|**`b`**|b|a|
+   |1|**`c`**|**`d`**|d|c|
+   |2|c|d|d|c|
+   |3|a|b|b|a|
 
 <br>
 <br>
@@ -94,10 +104,10 @@ const size = matrix.length / 2;
 for (let row = 0; row < size; row++) {
     for (let col = 0; col < size; col++) {
         max = Number.MIN_VALUE;
-        max = Math.max(matrix[row][col]);
-        max = Math.max(matrix[row][2 * size - col - 1]);
-        max = Math.max(matrix[2 * size - row - 1][col]);
-        max = Math.max(matrix[2 * size - row - 1][2 * size - col - 1]);
+        max = Math.max(matrix[row][col], max);
+        max = Math.max(matrix[row][2 * size - col - 1], max);
+        max = Math.max(matrix[2 * size - row - 1][col], max);
+        max = Math.max(matrix[2 * size - row - 1][2 * size - col - 1], max);
 
         total += max;
     }
