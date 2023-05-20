@@ -435,9 +435,9 @@ useState 와 useEffect 분석
 
 <br/>
 
-[bjLink]: https://github.com/JaeUpSu/My-Front-Log/tree/main/CodingTest/HackerRank "Go Coding Test 백준"
+[bjLink]: https://github.com/JaeUpSu/My-Front-Log/tree/main/CodingTest/%EB%B0%B1%EC%A4%80 "Go Coding Test 백준"
 [hackerrankLink]: https://github.com/JaeUpSu/My-Front-Log/tree/main/CodingTest/HackerRank "Go Coding Test HackerRank"
-[programmersLink]: https://github.com/JaeUpSu/My-Front-Log/tree/main/CodingTest/HackerRank "Go Coding Test 프로그래머스"
+[programmersLink]: https://github.com/JaeUpSu/My-Front-Log/tree/main/CodingTest/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4 "Go Coding Test 프로그래머스"
 
 [saasLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/As%20A%20Service/SaaS.md "Go SAAS"
 [jsMathLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/JavaScript/Math%20%EA%B8%B0%EB%8A%A5%EB%93%A4.md "Go JS Math"
