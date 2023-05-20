@@ -71,10 +71,6 @@ function processData(input) {
   
   let zigzagArray = firstHalf.concat(secondHalf);
   
-  findZigZagSequence(zigzagArray);
-}
-
-function findZigZagSequence(array) {
-  console.log(...array);
+  console.log(...zigzagArray);
 }
 ```
