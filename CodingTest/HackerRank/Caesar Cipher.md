@@ -55,14 +55,14 @@ s 를 k 만큼 계산해서 암호화한 문자열 반환하기
 ```typescript
 function caesarCipher(s: string, k: number): string {
     // Write your code here
-    const lowerA = "abcdefghijklmnopqrstuvwxyz"
-    const upperA = lowerA.toUpperCase()
+    const lowerAlphabet = "abcdefghijklmnopqrstuvwxyz"
+    const upperAlphabet = lowerA.toUpperCase()
 
     const res = s.split("").map(c => {
-    if (lowerA.includes(c)) {
-        return lowerA[(lowerA.indexOf(c) + k) % 26]
-    } else if (upperA.includes(c)) {
-        return upperA[(upperA.indexOf(c) + k) % 26]
+    if (lowerAlphabet.includes(c)) {
+        return lowerAlphabet[(lowerAlphabet.indexOf(c) + k) % 26]
+    } else if (upperAlphabet.includes(c)) {
+        return upperAlphabet[(upperAlphabet.indexOf(c) + k) % 26]
     } else {
         return c
     }
