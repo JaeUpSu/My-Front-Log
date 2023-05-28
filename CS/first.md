@@ -4,11 +4,24 @@
 
 Fundamental 한 개념을 학습하자.
 
-내가 참여한 프로젝트라면 직접 구현한 기능이 아니더라도 
+내가 참여한 프로젝트라면 
+직접 구현한 기능이 아니더라도 
 전반적인 Flow 를 설명할 수 있어야한다.
 ```
 
+<BR>
+
 ## Q. HTTP 와 HTTPS 의 차이가 무엇인가요?
+<BR>
+
+### &nbsp;&nbsp; `A. 데이터 전송 보안이 가장 핵심 차이`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `HTTPS 는 전송 중 데이터를 암호화`
+
+<BR>
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `+ 포트번호, URL, 인증서 유무의 차이`
+<BR>
+
 ```
  <🎙️ Answer >
 
@@ -78,6 +91,12 @@ Fundamental 한 개념을 학습하자.
 <br>
 
 ## Q. HTTPS 를 호스팅 했을 때 어떻게 하나요?
+<BR>
+
+### &nbsp;&nbsp; `A. CA 기관에 SSL/TLS 인증서를 받아`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `서버에 파일 추가 및 구성`
+<BR>
+
 ```
  <🎙️ Answer >
  
@@ -103,6 +122,13 @@ Fundamental 한 개념을 학습하자.
 <br>
 
 ## Q. Virtual Dom 을 설명해주세요
+<BR>
+
+### &nbsp;&nbsp; `A. 실제 DOM의 직접 조작을 최소화하기 위해`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Virtual DOM 을 통한 상태 변화 유무로`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `실제 DOM 을 업데이트하는 방식`
+<BR>
+
 ```
  <🎙️ Answer >
  
@@ -147,6 +173,13 @@ Fundamental 한 개념을 학습하자.
 <br>
 
 ## Q. Virtual Dom 과 연관지어 React 의 상태관리는 불변성이라는데 연관지어서 로직과 이유를 말해주세요.
+<BR>
+
+### &nbsp;&nbsp; `A. 실제 DOM 을 직접 조작하는 것이 아닌`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `가상 DOM 으로 변화감지 용이, 최적화된 `
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `렌더링, 시간여행 디버깅 및 롤백 용이`
+<BR>
+
 ```
  <🎙️ Answer >
 
@@ -161,48 +194,39 @@ Fundamental 한 개념을 학습하자.
 
  ---
 
- 컴포넌트의 상태가 변경되면 
- 새로운 Virtual DOM 트리가 생성
- 
- 그런 다음 React는 이 새 Virtual DOM 트리를 
- 이전 트리와 비교하고 (diffing) 
- 새 Virtual DOM과 일치하도록 
- 실제 DOM을 효율적으로 업데이트
- (조정)
+ 1. 변화 감지 용이
+    
+    상태가 가변적이면 깊은 비교를 해야하지만
+    상태가 불변성이라면 상태 객체의 참조가
+    바뀌었는지만 확인하면 됨
 
+ 2. 최적화된 렌더링
 
- 상태는 변경할 수 없기 때문에 
- React는 상태 변경이 발생할 때 
- 업데이트해야 할 사항을 확인하기 위해 
+    어떤 컴포넌트를 다시 렌더링해야 할지를
+    효과적으로 판단하는데 도움을 줌
 
- 전체 애플리케이션 또는 Virtual DOM을 
- 확인할 필요가 없음 
- 
- 상태가 변경된 컴포넌트만 
- 다시 렌더링하면 됨 
- 
- 이것은 React의 Virtual DOM 접근 방식이 
- 실제 DOM을 직접 업데이트하는 것보다 
- 훨씬 더 효율적일 수 있는 이유
+ 3. time travel 디버깅과 롤백 용이
 
+    불변성을 지키면서 상태를 관리하면
+    이전 상태를 쉽게 복원 가능
+
+    사용자의 액션을 취소하거나 재생하는 
+    기능을 구현하기 용이
 
 
  [결론]
- React의 불변 상태 덕분에 
- 잠재적으로 변경의 영향을 받을 수 있는 
- Virtual DOM 트리 부분만 다시 렌더링되어 
- 작업 부하가 줄어들고 업데이트의 효율성이 높아짐 
- 
- 이것은 실제 DOM을 직접 조작하는 순진한 접근 방식보다 
- 훨씬 더 효율적으로 추적하고 렌더링 최적화
-
- 때문에, 상태를 변경할 때는 직접 수정하는 대신 
- setState 나 useState 의 업데이트 함수를 사용하여 
- 새로운 상태 객체를 생성해야 함
+ 변화 감지 용이 / 최적화된 렌더링
+ time travel 디버깅과 롤백 용이
 ```
 <br>
 
 ## Q. API 설명해주세요.
+<BR>
+
+### &nbsp;&nbsp; `A. 한 프로그램에서 다른 프로그램으로 데이터를 주고 받기`
+
+<br>
+
 ```
  <🎙️ Answer >
 
@@ -217,11 +241,25 @@ Fundamental 한 개념을 학습하자.
 <br>
 
 ## Q. REST ful 이 어떤 정의와 논리를 가지는지 설명해주세요.
+<BR>
+
+### &nbsp;&nbsp; `A. 표현된 상태로 전송`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `HTTP URL 를 통한 자원(리소스) 명시`
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `HTTP Method (GET/POST/PUT/DELETE)로`
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `해당 자원에 대한 CRUD Operation 을 적용`
+
+<br>
+
 ```
  <🎙️ Answer >
  
  표현된 상태로 전송
-
+ 
+ 두 컴퓨터 시스템이 인터넷을 통해 
+ 정보를 안전하게 교환하기 위해 
+ 사용하는 인터페이스
 
  다음과 같은 구성요소와 원칙을 가짐
 
@@ -314,17 +352,27 @@ Fundamental 한 개념을 학습하자.
 <br>
 
 ## Q. REST ful 과 CRUD 를 맵핑해서 설명해주세요.
-```
- <🎙️ Answer >
- 
-Create <=> POST/PUT
-Read   <=> GET
-Update <=> PUT/POST/PATCH
-Delete <=> DELETE
-```
+
+<BR>
+
+### &nbsp;&nbsp; `A. Create <=> POST/PUT`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Read <=> GET`
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Update <=> PUT/POST/PATCH`
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Delete <=> DELETE`
+
 <br>
 
 ## Q. REST ful 이 어떤 이점이 있는지 설명해주세요.
+
+<BR>
+
+### &nbsp;&nbsp; `A. 확장성과 유연성`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `독립성`
+
+<br>
+
 ```
  <🎙️ Answer >
  
@@ -338,7 +386,12 @@ Delete <=> DELETE
     
     또한, 데이터 형식(JSON, XML 등)이나 
     통신 방식(GET, POST, PUT 등) 유연
- 
+
+ 독립성
+    서버와 클라이언트의 분리
+    각각을 독립적으로 개발하고 업데이트 가능
+    이는 유지보수를 쉽고 개발 효율성을 높임
+
  캐싱 가능
     HTTP 프로토콜을 그대로 사용
     HTTP의 캐싱 기능을 그대로 활용
@@ -361,11 +414,6 @@ Delete <=> DELETE
     표준 HTTP 디버깅 도구를 사용하여 
     API를 쉽게 테스트하고 디버그 가능
 
- 서버와 클라이언트의 분리
-    클라이언트와 서버가 분리
-    각각을 독립적으로 개발하고 업데이트 가능
-    이는 유지보수를 쉽고 개발 효율성을 높임
-
 ---
 
 모든 상황에 RESTful이 최선의 선택 X 
@@ -375,6 +423,14 @@ Delete <=> DELETE
 <br>
 
 ## Q. PUT 과 PATCH 가 어떻게 다른지 말해주세요.
+
+<BR>
+
+### &nbsp;&nbsp; `A. PATCH 는 리소스 일부`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `PUT 은 전체 리소스를 교체 업데이트`
+
+<br>
+
 ```
  <🎙️ Answer >
  
@@ -389,6 +445,14 @@ Delete <=> DELETE
 <br>
 
 ## Q. Local Storage 와 Session Storage 그리고 Cookie 에 대해 차이를 말해주세요.
+
+<BR>
+
+### &nbsp;&nbsp; `A. 데이터의 유지 기간과 용량`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `각기 다른 보안`
+
+<br>
+
 ```
  <🎙️ Answer >
  데이터의 유지 기간과 용량, 
@@ -453,6 +517,20 @@ Delete <=> DELETE
 <br>
 
 ## Q. Local Storage 와 Session Storage 그리고 Cookie 에 대해 보안의 차이에 대해서 구체적으로 말해주세요.
+
+<BR>
+
+### &nbsp;&nbsp; `A. storage 는 js 접근 가능`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `XSS 공격에 취약`
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Cookie 는 중간자 공격 취약`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `이를 방지하기 위해 HTTPS 연결`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `XSS 공격은 HTTP Only 로 방지`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `CSRF 공격에 취약`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `samsite 속성으로 방지 가능`
+
+<br>
+
 ```
  <🎙️ Answer >
  
@@ -508,16 +586,26 @@ Delete <=> DELETE
 <br>
 
 ## Q. Local Storage 와 Session Storage 그리고 Cookie 에 대해 휘발성의 차이에 대해서 구체적으로 말해주세요.
-```
- <🎙️ Answer >
 
- Local   => 영구적, 직접 삭제해야함
- Session => 브라우저 또는 탭을 닫을 때 삭제
- Cookie  => 만료날짜가 지나면 삭제
-```
+<BR>
+
+### &nbsp;&nbsp; `A. Local => 영구적, 직접 삭제`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Session => 브라우저 또는 탭을 닫을 때 삭제`
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Cookie => 만료날짜가 지나면 삭제`
+
 <br>
 
 ## Q. HTTP Only 에 대해서 어떤 논리와 어떻게 사용되는지 설명해주세요.
+
+<BR>
+
+### &nbsp;&nbsp; `A. XSS 공격을 방지`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `클라이언트 측 스크립트(JavaScript )를`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ` 통해 접근 불가능`
+
+<br>
+
 ```
  <🎙️ Answer >
  
@@ -551,6 +639,14 @@ Delete <=> DELETE
 <br>
 
 ## Q. 인증과 인가에 대한 설명해주세요.
+
+<BR>
+
+### &nbsp;&nbsp; `A. 인증은 사실 유무 확인`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `인가는 권한 유무 확인`
+
+<br>
+
 ```
  <🎙️ Answer >
  
@@ -609,6 +705,16 @@ Delete <=> DELETE
 <br>
 
 ## Q. JWT 의 Flow 는 어떻게 되나요?
+
+<BR>
+
+### &nbsp;&nbsp; `A. 로그인 요청 -> 인증(DB 정보)`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ` -> jwt생성-> 발행 -> 저장`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ` -> 인증요청 -> jwt 검증`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ` -> 인증된 요청 처리`
+
+<br>
+
 ```
  <🎙️ Answer >
 
@@ -628,47 +734,73 @@ Delete <=> DELETE
 
  * secrete key 를 통해 발급하고 인증
 
- -> 로그인 인증 요청 시 
- 
- -> 받은 정보를 DB 에서 체크
- 
- -> Secrete key 를 이용해 AccessToken 의
-    정보를 담아 이후에도 AccessToken 을 통해
-    요청과 응답이 이루어짐
 
- AccessToken 이 탈취되면 사용자 정보 유출
+1. 로그인 요청
+    사용자는 아이디와 비밀번호를 입력
+    클라이언트에게 로그인 요청
+    이 정보는 서버로 전송
 
- Client 에서 Server 로부터 요청 시
- AccessToken 과 RefreshToken 을 발급해
- 헤더에 실어 보내줌
+2. 인증 및 토큰 생성
+    서버는 받은 아이디와 비밀번호를 확인
+    사용자를 인증
+    
+    사용자가 올바르게 인증되면, 
+    서버는 Token (access/refresh)을 생성
 
- 서버에서는 refreshToken 만 안전하게 저장
- client 에 보낸 accessToken 을 통해
- 인증과 인가를 요청
+3. 토큰 발행
+    서버는 생성된 access 토큰과 
+    리프레시 토큰을 클라이언트에게 반환
+    
+4. 토큰 저장
+    클라이언트는 받은 토큰들을 저장
+    웹에서는 보통 쿠키나 웹 스토리지에 토큰을 저장
+    
+5. 인증 요청
+    클라이언트가 서버에 요청을 보낼 때마다 
+    access 토큰을 요청 헤더에 포함하여 전달
 
- Clent 에 보낸 accessToken 의 
- 만료시간은 짧게
- refreshToken 은 accessToken 에 비해
- 더 길게 줌
+6. 토큰 만료 확인
+    서버는 받은 access 토큰이 만료되었는지 확인 
+    만료되었다면 클라이언트에게 
+    액세스 토큰이 만료되었다는 응답을 전달
+    401 Error (Unauthorized) 반환
 
+7. 액세스 토큰 재발급 요청
+    클라이언트는 만료 응답을 받으면 
+    저장해둔 리프레시 토큰을 이용해 
+    새로운 액세스 토큰을 요청
 
- ** 사용자 로그인 -> 자격 증명 검증
-    -> 토큰 발급 -> 토큰 검증
----
+8. 리프레시 토큰 확인 및 액세스 토큰 재발급(계속)
+    리프레쉬 토큰이 유효성 검사를 통과한
+    토큰이라면 새로운 액세스 토큰을 생성
+    클라이언트에게 반환
+    
+    이렇게 재발급 받은 액세스 토큰은 
+    다시 요청 헤더에 포함되어 전달 가능
 
- accessToken 이 만료되고
+예외 ) 만료된 리프레시 토큰이라면 
+       사용자가 다시 로그인 요청
 
- accessToken 과 refreshToken 을 헤더에
- 실어 다시 서버로 보냄
- 
- 서버에서 받은 토큰의 정보와 DB 에 저장된
- refreshToken 을 확인하고 다시
- accessToken 을 재발급하여 
- 인증과 인가의 상태를 유지
 ```
 <br>
 
 ## Q. JWT 에서 Refresh Token 과 Access Token 이 어떻게 활용되는지 설명해주세요.
+
+```
+@ access
+일반적으로 짧은 유효 기간
+사용자가 리소스에 접근할 권한을 부여하는 역할
+보통 헤더에 직접적으로 포함
+
+@ refresh
+긴 유효 기간
+액세스 토큰이 만료됐을 때 
+새로운 액세스 토큰을 발급받는데 사용
+
+보통 서버에 저장
+가끔 헤더에 같이 저장되기도 하지만 보안 위험
+```
+
 ```
  <🎙️ Answer >
  
@@ -734,6 +866,14 @@ Delete <=> DELETE
 <br>
 
 ## Q. JWT Token 이 어떻게 만료를 확인하는지 설명해주세요.
+
+<BR>
+
+### &nbsp;&nbsp; `A. JWT의 페이로드 부분에`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `저장된 exp 클레임을 검사`
+
+<br>
+
 ```
  <🎙️ Answer >
 
@@ -750,6 +890,16 @@ Delete <=> DELETE
 <br>
 
 ## Q. JWT 에서 Refresh Token 과 Access Token 중에 어떤 것이 탈취당하는게 더 위험한지 설명하시오.
+
+
+<BR>
+
+### &nbsp;&nbsp; `A. refresh 토큰`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `상대적으로 긴 유효 시간을 가져서`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `계속 access 토큰을 생성 가능`
+
+<br>
+
 ```
  <🎙️ Answer >
 
@@ -774,6 +924,14 @@ Delete <=> DELETE
 <br>
 
 ## Q. JWT 에서 토큰의 탈취를 어떤식으로 할 수 있는지 설명해주세요.
+
+<BR>
+
+### &nbsp;&nbsp; `A. 중간자 공격 / XSS 공격`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Phishing`
+
+<br>
+
 ```
  <🎙️ Answer >
  
@@ -793,6 +951,14 @@ Delete <=> DELETE
 <br>
 
 ## Q. JWT 에서 토큰의 탈취를 어떤식으로 보안할 수 있는지 설명해주세요.
+
+<BR>
+
+### &nbsp;&nbsp; `A. HTTPS / HTTPOnly`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `교육`
+
+<br>
+
 ```
  <🎙️ Answer >
  
@@ -813,10 +979,21 @@ Delete <=> DELETE
 <br>
 
 ## Q. CRA 와 Next.js 가 어떻게 사용되는지 알려주세요.
+
+<BR>
+
+### &nbsp;&nbsp; `A. CRA 는 SPA 개발에 적합`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `NEXT.js 는 SSR 과 SSG 개발에 적합`
+
+<br>
+
 ```
  <🎙️ Answer >
  
  CRA를 사용하면 
+ 
+ Single Page Applications (SPA) 개발에 적합
+
  Babel, Webpack 등의 복잡한 설정 없이 
  React 애플리케이션을 빌드하고, 
  테스트하고, 배포 가능 
@@ -834,6 +1011,7 @@ Delete <=> DELETE
 
  이런 기능들은 SEO 최적화, 성능 개선, 
  개발 생산성 향상 등에 유리
+ 초기페이지 로딩성능 개선
  
  Next.js는 프로젝트 생성부터 
  프로덕션 배포까지의 
@@ -852,10 +1030,20 @@ Delete <=> DELETE
 <br>
 
 ## Q. Git 에서 PR 을 할 때 rebase 와 merge 의 차이를 설명해주세요.
+
+<BR>
+
+### &nbsp;&nbsp; `A. merge : 각 브랜치의 끝 부분을 병합`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `rebase : 한 브랜치의 변경사항을 다른 브랜치에 적용`
+
+<br>
+
 ```
  <🎙️ Answer >
  
  [merge]
+
+ * 두 브랜치를 합치는 동작
 
  두 브랜치를 합칠 때 
  각 브랜치의 끝 부분을 병합하는 방법
@@ -872,6 +1060,8 @@ Delete <=> DELETE
  ---
 
  [rebase]
+
+ * 한 브랜치의 커밋들을 다른 브랜치 위로 옮김
 
  한 브랜치의 변경사항을 
  다른 브랜치에 적용하는 방법
@@ -917,6 +1107,14 @@ Delete <=> DELETE
 <br>
 
 ## Q. Promises 를 설명해주세요.
+
+<BR>
+
+### &nbsp;&nbsp; `A. 비동기 작업의 최종 완료`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `또는 실패를 나타내는 객체`
+
+<BR>
+
 ```
  <🎙️ Answer >
  
@@ -987,6 +1185,15 @@ promise
 
 
 ## Q. aync-await 를 설명해주세요.
+
+<BR>
+
+### &nbsp;&nbsp; `A.  비동기 처리를 동기 처리처럼`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `보이게 하는 키워드로, Promises를 `
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `더 간결하고 이해하기 쉽게 처리하는데 사용`
+
+<BR>
+
 ```
  <🎙️ Answer >
  
@@ -1029,6 +1236,13 @@ Await
 
 
 ## Q. Cookie 와 Header 를 연관지어서 설명해주세요.
+<BR>
+
+### &nbsp;&nbsp; `A. 세션 관리나 사용자 인증 등의`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `기능을 구현하는 데 있어서 중요한 역할`
+
+<BR>
+
 ```
  <🎙️ Answer >
  
@@ -1060,6 +1274,13 @@ Await
 
 
 ## Q. CorsHeader 에 대해 설명해주세요.
+<BR>
+
+### &nbsp;&nbsp; `A. 다른 도메인에서 리소스를`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `공유할 수 있도록 해주는 웹 표준`
+
+<BR>
+
 ```
  <🎙️ Answer >
  
@@ -1103,6 +1324,12 @@ Await
 
 
 ## Q. CorsHeader 의 에러를 어떻게 확인할 수 있는지 설명해주세요.
+<BR>
+
+### &nbsp;&nbsp; `A. 웹 브라우저 콘솔에서 확인 가능`
+
+<BR>
+
 ```
  <🎙️ Answer >
  
@@ -1123,6 +1350,13 @@ Await
 
 
 ## Q. Proxy 에 대해 원리와 정의를 설명해주세요.
+<BR>
+
+### &nbsp;&nbsp; `A. 네트워크에서 한 컴퓨터가`
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `다른 컴퓨터의 연결을 대신하는 것`
+
+<BR>
+
 ```
  <🎙️ Answer >
  
