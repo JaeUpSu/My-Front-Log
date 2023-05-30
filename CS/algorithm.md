@@ -1,3 +1,19 @@
+- [이진탐색]
+- [퀵정렬]
+- [DFS]
+- [BFS]
+- [DP]
+- [두_포인터]
+- [슬라이딩_윈도우]
+- [그리디_알고리즘]
+- [리커시브]
+- [백트래킹]
+- [비트마스크]
+
+<br>
+<hr>
+<br>
+
 ## @ 이진탐색 (Binary Search)
 
 ### `정렬된 상태에서 중간값과 목표값을 비교, 목표값의`
@@ -208,5 +224,32 @@ function backtrack(temp, nums, result) {
         backtrack(temp, nums, result);
         temp.pop();
     }
+}
+```
+
+## @ 비트마스크 (Bit Mask)
+
+### `이진수를 사용하는 컴퓨터의 연산을 이용하여`
+### `비트(bit)를 직접 조작하는 알고리즘 기법`
+
+```javascript
+//  AND(&), OR(|), XOR(^), NOT(~), 
+// Left Shift(<<), Right Shift(>>)
+
+//  주어진 숫자 배열(nums)의 모든 부분 집합(subsets)을 생성하는 예제입니다. 부분 집합은 비트마스크를 사용하여 나타내는 문제
+function subsets(nums) {
+    let result = [];
+    let n = nums.length;
+    let total = 1 << n;  // 2^n
+
+    for(let i = 0; i < total; i++) {
+        let subset = [];
+        for(let j = 0; j < n; j++) {
+            if(i & (1 << j)) subset.push(nums[j]);  // check if jth bit is set in i
+        }
+        result.push(subset);
+    }
+
+    return result;
 }
 ```
