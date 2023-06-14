@@ -784,6 +784,7 @@ Fundamental 한 개념을 학습하자.
 ```
 <br>
 
+
 ## Q. JWT 에서 Refresh Token 과 Access Token 이 어떻게 활용되는지 설명해주세요.
 
 ```
