@@ -19,9 +19,9 @@
 > 정의
 
 ```
-MyInfo 의 BACK 은 Django
-Front 는 React 로 
-RESTFul 한 API 생성하여 사용
+MyInfo 의 
+BACK 에 Restful API 를 선언하여
+FRONT 에서 사용하기
 ```
 <br>
 <br>
