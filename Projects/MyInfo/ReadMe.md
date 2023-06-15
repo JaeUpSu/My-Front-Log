@@ -55,9 +55,9 @@ Discord Bot 을 활용한 나의 웹 개발자 소개 페이지
 [rdlLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/ReactDJangoLinking.md "Go MyInfo React Django Linking"
 <br>
 
-### &nbsp;&nbsp;&nbsp;[**🔗 Cors 와 Csrf**][rdlLink]<br>
+### &nbsp;&nbsp;&nbsp;[**🔗 Cors 와 Csrf**][ccLink]<br>
 
-[rdlLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/ReactDJangoLinking.md "Go MyInfo React Django Linking"
+[ccLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/MyInfo/Csrf_Cors.md "Go MyInfo CSRF & Cors"
 
 ### &nbsp;&nbsp;&nbsp;[**🔗 Request Discord Bot**][dbLink]<br>
 
