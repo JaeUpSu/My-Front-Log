@@ -102,7 +102,7 @@
 
 ### &nbsp;&nbsp;&nbsp;[**🔗 이미지 등록**][imgRegisterLink]<br>
 
-[imgRegisterLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/%ED%95%84%ED%84%B0%EB%A7%81.md "Go Bangsam IMG Register"
+[imgRegisterLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/Projects/Bangsam/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EB%93%B1%EB%A1%9D.md "Go Bangsam IMG Register"
 
 
 <br>
