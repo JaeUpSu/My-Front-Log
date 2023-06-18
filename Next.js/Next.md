@@ -26,6 +26,8 @@
 강력한 기능으로 
 
 원활한 개발자 경험을 제공하는 React 기반 프레임워크
+
+npx create-next-app@latest {app-name} --template typescript
 ```
 
 <br>
