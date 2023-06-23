@@ -68,9 +68,9 @@
 @ RESTFul 과 CRUD 맵핑
 
    - Create | POST/PUT
-    Read   | GET
-    Update | PUT/PATCH
-    Delete | DELETE
+   - Read   | GET
+   - Update | PUT/PATCH
+   - Delete | DELETE
 
 <br>
 
@@ -121,7 +121,7 @@
 	=> 인증요청 => JWT 검증 => 인증된 요청 처리
 
        - Header . Payload . Signature
-       
+
     	=> 헤더 (토큰, 사용 서명 알고리즘)
     	=> 내용 (클레임, 사용자 권한 정보와 데이터)
     	=> 서명 (인코딩한 문자열, 비밀키)
