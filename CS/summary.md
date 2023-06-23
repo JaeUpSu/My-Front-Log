@@ -48,14 +48,14 @@
 	-> 자원에 대한 행위 : HTTP Method
 	-> 자원에 대한 행위의 내용 : HTTP Message Pay Load 
 
-  - 특징
-	Server-Client(서버-클라이언트 구조) => 독립적
-	Stateless(무상태) => 상태를 갖지 않음, 확장성 or 간단함
-	Cacheable(캐시 처리 가능) => 클라이언트 응답 캐싱 and 재사용 가능
-	Layered System(계층화) => APP 은 클라이언트와 서버 사이 동일 작동
-	Uniform Interface(인터페이스 일관성)
-	 => URI 로 리소스에 대한 조직 통일, 예측 가능하게 상호작용 
-                  HTTP 메서드 이용
+     - 특징
+    	Server-Client(서버-클라이언트 구조) => 독립적
+    	Stateless(무상태) => 상태를 갖지 않음, 확장성 or 간단함
+    	Cacheable(캐시 처리 가능) => 클라이언트 응답 캐싱 and 재사용 가능
+    	Layered System(계층화) => APP 은 클라이언트와 서버 사이 동일 작동
+    	Uniform Interface(인터페이스 일관성)
+    	 => URI 로 리소스에 대한 조직 통일, 예측 가능하게 상호작용 
+                     HTTP 메서드 이용
 
 
 @ RESTFul 과 CRUD 맵핑
@@ -80,17 +80,17 @@
   - 데이터 유지 기간과 용량
       각기 다른 보안
 
- 	-> Local Storage   
-		(영구적 / 용량 Big / JS 접근 가능하여 XSS 공격 취약)
- 	-> Session Storage 
-		(창을 닫을때 / 용량 Medium / JS 접근 가능하여 XSS 공격 취약)
- 	-> Cookie	   
-		(유효기간 존재 / 용량 Small / 중간자 공격 취약)
+ 	    -> Local Storage   
+	    	(영구적 / 용량 Big / JS 접근 가능하여 XSS 공격 취약)
+ 	    -> Session Storage 
+	    	(창을 닫을때 / 용량 Medium / JS 접근 가능하여 XSS 공격 취약)
+ 	    -> Cookie	   
+	    	(유효기간 존재 / 용량 Small / 중간자 공격 취약)
 
 
-	=> Storage, XSS 공격은 HTTP Only 로 방지 (스크립트 접근 막음)
-	=> Cookie, 중간자 공격은 HTTPS 로 방지
-	=>         CSRF 공격은 Samsite 속성으로 방지
+	    => Storage, XSS 공격은 HTTP Only 로 방지 (스크립트 접근 막음)
+	    => Cookie, 중간자 공격은 HTTPS 로 방지
+	    =>         CSRF 공격은 Samsite 속성으로 방지
 
 @ 인증과 인가 설명
 
@@ -102,17 +102,17 @@
   - 로그인 => 인증 => JWT 생성 => 발행 => 저장 
 	=> 인증요청 => JWT 검증 => 인증된 요청 처리
 
-   - Header . Payload . Signature
-	=> 헤더 (토큰, 사용 서명 알고리즘)
-	=> 내용 (클레임, 사용자 권한 정보와 데이터)
-	=> 서명 (인코딩한 문자열, 비밀키)
+       - Header . Payload . Signature
+    	=> 헤더 (토큰, 사용 서명 알고리즘)
+    	=> 내용 (클레임, 사용자 권한 정보와 데이터)
+    	=> 서명 (인코딩한 문자열, 비밀키)
 
-  - 리프레시 토큰으로 액세스 토큰을 재발급
-    리프레시 토큰이 만료되면 다시 로그인 요청
+      - 리프레시 토큰으로 액세스 토큰을 재발급
+        리프레시 토큰이 만료되면 다시 로그인 요청
 
-  - JWT 검증할 때, 서버는 exp 클레임을 확인하여 토큰 만료 판단
+      - JWT 검증할 때, 서버는 exp 클레임을 확인하여 토큰 만료 판단
 
-  - 토큰 탈취는 중간자 공격 / XSS 공격 / 피싱
+      - 토큰 탈취는 중간자 공격 / XSS 공격 / 피싱
 
 
 @ Next.js 와 CRA 
@@ -231,6 +231,73 @@
 
 	=> 상태를 관리하고 조작하기 위한 필수 메커니즘을 제공
 
+
+@ Cors Header 란?
+
+    - 웹 브라우저에서 서로 다른 출처(도메인) 간에 공유되는
+      리소스에 대한 액세세를 제어하는 메커니즘
+
+    - 승인되지 않는 출처간 요청을 방지하기위해 브라우저에서 
+      구현한 보안기능
+
+
+    - Back 
+
+	CORS 헤더 설정
+	  - 서버는 허용되는 교차 출처 요청에 대해 브라우저에 
+	    알리기 위해 응답에 적절한 CORS 헤더를 포함해야 함 
+	    헤더에는 일반적으로 Access-Control-Allow-Origin, 
+	    Access-Control-Allow-Methods, 
+	    Access-Control-Allow-Headers 등이 포함
+
+
+@ DRF 란?
+
+      - 웹 API를 구축하기 위한 강력하고 유연한 툴킷
+
+      - RESTful API의 개발을 단순화하는 재사용 가능한 
+        구성 요소 및 도구 세트를 제공하여 직렬화, 인증, 권한 
+        등과 같은 일반적인 API 작업을 더 쉽게 처리
+     
+      - 기능이자 장점
+	        직렬화
+	        보기 및 보기 세트
+	        인증 및 권한
+	        URL 라우팅
+	        페이지 매김 및 필터링
+
+
+@ NEXT.js 13 패치 내용
+
+      - app 디렉터리
+	     pages 사라질 예정
+	        *  React Server Components 와 새롭게 생기는 
+	           Data fetching 기능, 그리고 Streaming등을 
+	           유연하게 지원하게 하기 위함
+
+      - next/image
+
+      - next/font
+
+      - next/link
+
+
+@ CI / CD 란?
+
+      - CI : 지속적인 통합
+      - CD : 지속적인 배포
+
+      - SW 변경 사항을 지속 가능하고 효율적인 방식으로 
+      프로덕션에 자동으로 구축, 테스트 및 배포하는 방법
+
+
+	-  GitHub Actions를 사용하여 기본 CI/CD 
+	   파이프라인을 설정, 워크플로 만들기
+
+
+	-  GitHub Actions는 push 또는 pr 과 같은  
+	    GitHub 리포지토리의 특정 이벤트에 의해 
+	    트리거되는 워크플로를 정의하여 작동
 
 
 
