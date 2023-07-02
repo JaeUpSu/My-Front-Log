@@ -203,5 +203,40 @@ ex )
 - `결제 진행`
 - `결제 정보 작성`
 - `구매 확인`
-
 <br>
+```javascript
+describe('E-commerce user flow', function() {
+  it('completes a purchase', function() {
+    // Open the site
+    cy.visit('https://www.your-ecommerce-site.com')
+
+    // Search for a product
+    cy.get('.search-bar').type('Awesome Product{enter}')
+
+    // Choose the product from the list
+    cy.get('.product-list')
+      .contains('Awesome Product')
+      .click()
+
+    // Add it to the cart
+    cy.get('.add-to-cart').click()
+
+    // Proceed to checkout
+    cy.get('.checkout').click()
+
+    // Fill out payment information
+    cy.get('.payment-info')
+      .within(() => {
+        cy.get('input[name=card-number]').type('4111111111111111')
+        cy.get('input[name=expiry-date]').type('12/2025')
+        cy.get('input[name=cvv]').type('123')
+      })
+
+    // Confirm purchase
+    cy.get('.confirm-purchase').click()
+
+    // Check for a successful purchase message
+    cy.get('.purchase-success').should('contain', 'Thank you for your purchase!')
+  })
+})
+```
