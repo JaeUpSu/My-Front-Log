@@ -9,8 +9,10 @@
 
 3. SEO 점수를 확인하는 도구를 연결하여 SEO 점수 높이기
 
-4. D3 공부
+4. D3 학습
 
-5. GraphQL 공부
+5. GraphQL 학습
 
-6. CDT 공부
+6. CDT 학습
+
+7. zustand 등 상태관리도구 학습
