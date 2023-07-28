@@ -35,6 +35,7 @@
 7. zustand 등 상태관리도구 학습
 
 8. React-Native 학습
+	• React Native로 크로스플랫폼 앱을 개발 및 운영해본 경험이 있으신 분
 
 9. Flutter 학습
 
@@ -45,3 +46,5 @@
 12. Webpack, ESBuild, SWC, Babel 학습
 
 13. GitHub Actions 학습
+
+14. Push notification과 FCM에대한 이해
