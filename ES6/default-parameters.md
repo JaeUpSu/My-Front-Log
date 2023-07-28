@@ -4,7 +4,7 @@
 <br>
 
 
-# ⚒️  `Default Props 알아보자`
+# ⚒️  `Default Parameters 알아보자`
 
 <br>
 
