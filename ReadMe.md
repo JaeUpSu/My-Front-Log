@@ -31,10 +31,14 @@
     - [🦴 JavaScript](#-javascript)
     - [🦴 TypeScript](#-typescript)
     - [🦴 ES6](#-es6)
+    - [🦴 React](#-react)
     - [🦴 W3C 웹 표준](#-w3c-웹-표준)
     - [🦴 상태관리](#-상태관리)
     - [🦴 Next.js](#-next-js)
     - [🦴 Test](#-test)
+    - [🦴 Seo](#-seo)
+    - [🦴 GraphQL](#-graphql)
+    - [🦴 Practice](#-practice)
     - [🦴 Monitoring](#-monitoring)
     - [🦴 DDD](#-ddd)
     - [🦴 AS A Service](#-as-a-service)
@@ -340,6 +344,13 @@ useState 와 useEffect 분석
 - [Spread-Opts][esSpreadLink]
 - [Template-Literal][esLiteralLink]
 
+<br>
+<br>
+
+####  🦴 React
+
+- [React-Query][rqLink]
+- [useMemo&useCallback][mcLink]
 
 <br>
 <br>
@@ -359,6 +370,7 @@ useState 와 useEffect 분석
 - [상태관리][stateManageLink]
 - [Recoil][smRecoilLink]
 - [Context][smContextLink]
+- [Redux][smReduxLink]
 
 <br>
 <br>
@@ -399,6 +411,33 @@ useState 와 useEffect 분석
 - [Jest][testJestLink]
     - [환경설정][testJestEnvLink]
 
+<br>
+<br>
+
+####  🦴 SEO
+
+- [SEO란][seoLink]
+  
+<br>
+<br>
+
+####  🦴 GraphQL
+
+- [GraphQL][graphqlLink]
+- [RESTFul과 차이][restfuldiffLink]
+  
+<br>
+<br>
+
+####  🦴 Practice
+
+- [useMemo 와 React.memo][pMemoLink]
+- [useCallback][pCallbackLink]
+- [useEffect][pEffectLink]
+- [React.lazy][pLazyLink]
+- [PureComponent][pPureLink]
+
+  
 <br>
 <br>
 
@@ -443,6 +482,24 @@ useState 와 useEffect 분석
 <!-- - [백준][sentryLink] -->
 
 <br/>
+
+[pMemoLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/%F0%9F%96%8B%EF%B8%8FPractice/useMemo.md "Go seMemo 와 React.memo 연습"
+[pCallbackLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/%F0%9F%96%8B%EF%B8%8FPractice/useCallback.md "Go useCallback 연습"
+[pEffectLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/%F0%9F%96%8B%EF%B8%8FPractice/useEffect.md "Go useEffect 연습"
+[pLazyLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/%F0%9F%96%8B%EF%B8%8FPractice/React.lazy.md "Go lazy loading 연습"
+[pPureLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/%F0%9F%96%8B%EF%B8%8FPractice/PureComponent.md "Go PureComponent 연습"
+
+
+[seoLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/SEO/index.md "Go SEO 최적화"
+
+[graphqlLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/GraphQL/Readme.md "Go GraphQL 이란?"
+[restfuldiffLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/GraphQL/RESTFul%20%EA%B3%BC%20%EC%B0%A8%EC%9D%B4.md "Go GraphQL 과 RESTFul 차이"
+
+[smReduxLink]: https://github.com/JaeUpSu/My-Front-Log/tree/main/%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC/Redux "Go 상태관리 Redux"
+
+[rqLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/React/react-query.md "Go React-Query"
+[mcLink]: https://github.com/JaeUpSu/My-Front-Log/blob/main/React/useMemo%20%26%20useCallback.md "Go useMemo 와 useCallback"
+
 
 [bjLink]: https://github.com/JaeUpSu/My-Front-Log/tree/main/CodingTest/%EB%B0%B1%EC%A4%80 "Go Coding Test 백준"
 [hackerrankLink]: https://github.com/JaeUpSu/My-Front-Log/tree/main/CodingTest/HackerRank "Go Coding Test HackerRank"
