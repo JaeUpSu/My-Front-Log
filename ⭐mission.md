@@ -22,7 +22,6 @@
 	- 터치 프랜들리 요소
 	- 성능 최적화
 
-
 2. Google Trend 체크
 
 3. SEO 점수를 확인하는 도구를 연결하여 SEO 점수 높이기
@@ -34,3 +33,7 @@
 6. CDT 학습
 
 7. zustand 등 상태관리도구 학습
+
+8. React-Native 학습
+
+9. Flutter 학습
