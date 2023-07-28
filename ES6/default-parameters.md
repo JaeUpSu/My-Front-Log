@@ -4,7 +4,7 @@
 <br>
 
 
-# ⚒️  `Class 알아보자`
+# ⚒️  `Default Props 알아보자`
 
 <br>
 
