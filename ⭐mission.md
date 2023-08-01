@@ -8,12 +8,22 @@
 
 4. 비동기/동기
 
-5. React-Query 의 캐쉬 활용
+5. React-Query 의 사용 이유와 캐쉬 활용
    - 캐시 시간과 부실 시간을 추가로 사용자 지정
 
 6. 조건부 프리페치
 
 7. 이미지 최적화
+
+8. Recoil 도 Persist 기능 존재 (Recoil Persist 공부)
+
+9. PLUS Pattern
+	=> React 근간 : 편한 개발 (다양한 라이브러리) , 상태관리 
+
+10. CRA 가 사용하기 좋은 상황 
+    SSR 가 사용하기 좋은 상황
+
+11. TypeScript 사용 이유
 
 ---
 
@@ -48,3 +58,19 @@
 13. GitHub Actions 학습
 
 14. Push notification과 FCM에대한 이해
+
+
+
+
+
+
+- 성능 최적화 공부하려면
+```
+MSW => 10,000 API call 로 성능 최적화 학습
+
+Network => 시간 측정
+Performance => 메모리 사용량, 시간, 렌더링, 이미지 어느정도 측정
+
+	=> LightHouse 확인
+	=> Styled-Components
+```
