@@ -200,7 +200,6 @@ export { Usage };
 JSX, useState, handleChange 세 곳 모두를 체크
 ```
 
-
 <br>
 <br>
 
@@ -269,3 +268,179 @@ hook과 JSX 사이에 자신만의 로직 삽입 가능
 어떻게 동작하는지 알아야할 필요
 ```
 
+<br>
+<br>
+
+> Props Getters Pattern
+
+```
+Custom hook pattern이 엄청난 통제권
+하지만, 그만큼 컴포넌트를 이용하기 어려움 
+
+Props Getters Pattern은 이런 복잡도를 감싸기 위해 시도
+native props를 노출하는 대신 props getters의 목록을 제공
+
+이는 유저가 올바른 JSX요소에 접근할 수 있도록 
+의미있는 이름을 사용
+```
+
+```javascript
+import React from "react";
+import { Counter } from "./Counter";
+import { useCounter } from "./useCounter";
+
+const MAX_COUNT = 10;
+
+function Usage() {
+    const {count, getCounterProps, getIncrementProps, getDecrementProps} = useCounter({ initial:0, max: MAX_COUNT });
+
+    const handleBtn1Clicked = () => {
+        console.log("btn 1 clicked");
+    }
+
+    return (
+        <>
+            <Counter {...getCounterProps()}>
+                <Counter.Dcrement
+                    icon={"minus"}
+                    {...getDecrementProps()}
+                />
+                <Counter.Label>Counter</Counter.Label>
+                <Counter.Count />
+                <Counter.Increment 
+                    icon={"plus"}
+                    {...getIncrementProps()}
+                />
+            </Counter>
+            <button {...getIncrementProps({ onClick: handleBtn1Clicked })}>
+                Custom increment btn 1
+            </button>
+            <button {...getIncrementProps({ disabled: count > MAX_COUNT - 2 })}>
+                Custom increment btn 2
+            </button>
+        </>
+    )
+}
+
+export {Usage}
+```
+
+- `장점`
+
+```
+사용하기 쉬움
+
+올바른 getter 를 그에 맞는 
+JSX 요소에 사용하기만 하면 됨
+
+---
+
+유연함 
+
+유저는 원한다면 props를 오버로드
+```
+
+- `단점`
+
+```
+불투명 
+
+물론 getters를 통한 추상화는 
+컴포넌트를 사용하기 쉽게 만들어주지만 
+결국 더 불투명
+
+---
+
+내부 로직에 대한 이해
+
+정확하게 오버라이드하기 위해서는 
+getters에 의해 제공된 prop 리스트와 
+하나가 바뀔 때 생기는 내부에서의 
+로직 변화를 알아야 함
+```
+
+<br>
+<br>
+
+> State reducer Pattern
+
+```
+IoC에 있어서는 최고의 패턴
+이 패턴은 유저에게 컴포넌트를 
+내부적으로 제어할 수 있는 더 발전된 방법을 제시
+
+코드는 Custom Hook Pattern과 비슷해보이지만, 
+더 나아가 유저가 Hook을 통해 전달된 reducer를 정의
+이 reducer는 컴포넌트 내의 모든 action들을 오버로드
+```
+
+```javascript
+import React from "react";
+import { Counter } from "./Counter";
+import { useCounter } from "./useCounter";
+
+const MAX_COUNT = 10;
+
+function Usage() {
+    const reducer = (state, action) => {
+        switch (action.type) {
+            case "decrement" :
+                return {
+                    count : Math.max(0, state.count - 2)
+                };
+            default :
+                return useCounter.reducer(state, action);
+        }
+    }
+
+    const { count, handleDecrement, handleIncrement } = useCounter(
+        { initial: 0, max: 10 },
+        reducer
+    );
+
+    return (
+        <>
+            <Counter value={count}>
+               <Counter.Decrement icon={"minus"} onClick={handleDecrement} />
+               <Counter.Label>Counter</Counter.Label>
+               <Counter.Count />
+               <Counter.Increment icon={"plus"} onClick={handleIncrement} />
+            </Counter>
+            <button onClick={handleIncrement} disabled={count === MAX_COUNT}>
+              Custom increment btn 1
+            </button>
+        </>
+    )
+}
+
+export {Usage}
+```
+
+- `장점`
+
+```
+더 많은 통제권
+
+엄청나게 복잡한 경우에서 
+state reducer를 사용하는 것은 
+유저에게 통제권을 남겨주는 최고의 방법
+
+모든 내부 action들은 
+이제 외부에서 접근가능하며 오버라이드
+```
+
+- `단점`
+
+```
+이 패턴은 확실히 유저와 
+개발자 모두에게 가장 복잡한 패턴
+
+reducer의 액션이 바뀔 수 있기 때문에, 
+컴포넌트 내부 로직에 대한 깊은 이해가 필요
+```
+
+<br>
+<br>
+<br>
+
+> 큰 힘에는 큰 책임이 따른다
