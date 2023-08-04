@@ -1,5 +1,7 @@
 # MVC Pattern
 
+- 선호 X
+
 <br>
 <br>
 
