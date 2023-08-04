@@ -153,3 +153,28 @@ export default App;
 보조 보기 및 사용자 인터페이스의 초기 렌더링에 
 중요하지 않은 앱의 기타 부분과 같은 컴포넌트가 포함
 ```
+
+<br>
+<br>
+
+<hr>
+
+<br>
+
+> Q. 이미지 최적화를 lazy loading 사용하는지?
+
+```
+예, 지연 로드는 웹 애플리케이션에서 
+이미지를 최적화하는 데 사용 가능
+
+특히 많은 이미지를 표시하는 애플리케이션의 경우 
+성능을 개선하기 위해 일반적으로 사용되는 기술
+```
+
+```javascript
+<img src="image.jpg" loading="lazy" alt="An example image">
+```
+
+<br>
+
+- tip ) Skeleton loading 을 통해 동시에 이미지 보이게 하기.
