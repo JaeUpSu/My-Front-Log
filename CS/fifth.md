@@ -53,6 +53,7 @@ Hospital에서 Home까지 연결
 - JWT
 - CorsHeader
 - Browser Storage 정리
+- Flux
 
 ----------------------------------------------------------------
 
@@ -286,3 +287,19 @@ JavaScript 실행 환경의
 	    => Storage, XSS 공격은 HTTP Only 로 방지 (스크립트 접근 막음)
 	    => Cookie, 중간자 공격은 HTTPS 로 방지
 	    =>         CSRF 공격은 Samsite 속성으로 방지
+
+
+## Flux 패턴
+
+1. `사용자는 React View 와 상호 작용`
+
+2. `View 는 중앙 Dispatcher 를 통해 Application 데이터 및 비즈니스 로직을 보유하는 다양한 Stores 로 Action 을 전파`
+
+3. `각 Store 가 변겨되면 변경을 알리는 이벤트를 방송`
+
+4. `View 는 이러한 이벤트를 수신하고 Stores 에서 새 데이터를 검색 후 다음 View 를 업데이트`
+
+<br>
+
+> 단방향 데이터 흐름은 애플리케이션을 보다 예측 가능하고 이해하기 쉽게 만듬
+
