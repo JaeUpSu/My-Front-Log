@@ -54,6 +54,7 @@ Hospital에서 Home까지 연결
 - CorsHeader
 - Browser Storage 정리
 - Flux
+- React-Query 의 stale time 과 cache time
 
 ----------------------------------------------------------------
 
