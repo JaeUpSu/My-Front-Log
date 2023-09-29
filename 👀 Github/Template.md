@@ -1,4 +1,4 @@
-<img src="../Image/es6_logo.jpg" style="object-fit: cover" width="100%"/>
+<img src="../Image/github_logo.jpg" style="object-fit: cover" width="100%"/>
 
 <br>
 <br>
