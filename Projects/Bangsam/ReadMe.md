@@ -32,12 +32,12 @@
 
 <img src="./Image/bang_1.png" height="250px">
 <div style={{display: "flex"}}>
-<img src="./Image/bang_2.png" height="180px">
-<img src="./Image/bang_3.png" height="180px">
+<img src="./Image/bang_2.png" height="250px">
+<img src="./Image/bang_3.png" height="250px">
 </div>
 <div style={{display: "flex"}}>
-<img src="./Image/bang_4.png" height="250px">
-<img src="./Image/bang_5.png" height="250px">
+<img src="./Image/bang_4.png" height="350px">
+<img src="./Image/bang_5.png" height="350px">
 </div>
 
 
