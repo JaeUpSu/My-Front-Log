@@ -26,11 +26,11 @@
 
 - ## `프로젝트 이미지`
 
-<div style={{display: "flex"}}
+<div style={{display: flex"}}>
 <img src="./Image/cg2.gif" height="250px">
 <img src="./Image/cg1.gif" height="250px">
 </div>
-<div style={{display: "flex"}}
+<div style={{display: "flex"}}>
 <img src="./Image/cg3.gif" height="250px">
 <img src="./Image/cg4.gif" height="250px">
 </div>
