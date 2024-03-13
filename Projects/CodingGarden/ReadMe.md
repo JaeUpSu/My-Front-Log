@@ -8,7 +8,7 @@
 
 <br>
 
-[코딩가든(데이터x, 사이트)](https://cmgg.store/)
+## [코딩가든(데이터x, 사이트)](https://cmgg.store/)
 
 
 * **정의**
